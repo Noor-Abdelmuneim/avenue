@@ -87,19 +87,19 @@ export default function ContactPage() {
       icon: Phone,
       title: "الهاتف",
       details: ["+964 770 123 4567", "+964 781 456 7890"],
-      color: "from-[#1a365d] to-[#2d5a87]",
+      color: "from-[#1a365d] to-[#9e1915]",
     },
     {
       icon: Mail,
       title: "البريد الإلكتروني",
       details: ["info@avenue-iq.com", "support@avenue-iq.com"],
-      color: "from-red-500 to-red-700",
+      color: "from-[#1a365d] to-[#9e1915]",
     },
     {
       icon: Clock,
       title: "ساعات العمل",
       details: ["الأحد - الخميس: 9:00 ص - 5:00 م", "الجمعة والسبت: عطلة رسمية"],
-      color: "from-purple-500 to-purple-600",
+      color: "from-[#1a365d] to-[#9e1915]",
     },
   ];
 
@@ -180,7 +180,7 @@ export default function ContactPage() {
                     >
                       <info.icon className="w-10 h-10 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-[#1a365d] mb-4">
+                    <h3 className="text-2xl font-bold text-gray-600 mb-4">
                       {info.title}
                     </h3>
                     <div className="space-y-2">
@@ -339,24 +339,28 @@ export default function ContactPage() {
 
               {/* Map and Additional Info */}
               <div className="space-y-8">
-                {/* Map Placeholder */}
+                {/* Map Embed */}
                 <Card className="overflow-hidden border-0 shadow-lg">
-                  <div className="relative h-80 bg-gray-200">
-                    <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="خريطة موقع بلوم هولدنغ"
-                      fill
-                      className="object-cover"
-                    />
+                  <div className="relative h-80">
+                    {/* Iframe لخريطة Google */}
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d106730.15825456278!2d44.3557296!3d33.2843572!3m2!1i1024!2i768!4f13.1!2m1!1z2KPZgdmG2YrZiCDZhNmE2LnZgtin2LHYp9iq4oCt!5e0!3m2!1sen!2siq!4v1748429043225!5m2!1sen!2siq"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="absolute inset-0 w-full h-full"
+                    ></iframe>
+                    {/* Overlay محتوى الخريطة */}
                     <div className="absolute inset-0 bg-[#1a365d]/20 flex items-center justify-center">
                       <div className="text-center text-white">
                         <MapPin className="w-12 h-12 mx-auto mb-2" />
                         <p className="text-lg font-semibold">
                           موقعنا على الخريطة
                         </p>
-                        <p className="text-sm opacity-90">
-                          برج بلوم، شارع الشيخ زايد، دبي
-                        </p>
+                        <p className="text-sm opacity-90">العراق بغداد</p>
                       </div>
                     </div>
                   </div>
@@ -373,7 +377,7 @@ export default function ContactPage() {
               <div className="text-gray-600 font-semibold mb-4 text-lg">
                 تابعنا
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#1a365d] mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-[#9e1915] mb-6">
                 ابق على تواصل معنا
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">

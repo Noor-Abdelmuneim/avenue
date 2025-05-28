@@ -42,7 +42,7 @@ const CTA = () => {
             <div>
               <Phone className="w-8 h-8 mx-auto mb-2 text-gray-300" />
               <div className="font-semibold text-lg mb-1">اتصل بنا</div>
-              <div className="text-gray-200 text-sm">+964 770 123 4567</div>
+              <div className="text-gray-200 text-sm" dir="ltr">+964 770 123 4567</div>
             </div>
             <div>
               <Mail className="w-8 h-8 mx-auto mb-2 text-gray-300" />

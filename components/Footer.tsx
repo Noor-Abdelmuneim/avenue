@@ -30,7 +30,7 @@ const Footer = () => {
                 <img
                   src="/Avenue Logo White.png"
                   alt="أفنيو للأستثمار والتطوير العقاري"
-                  className="h-13"
+                  className="h-10"
                 />
               </Link>
             </div>
@@ -61,7 +61,7 @@ const Footer = () => {
               {[
                 ["الرئيسية", "/"],
                 ["من نحن", "/about"],
-                ["خدماتنا", "/services"],
+                ["خدماتنا", "/what-we-do"],
                 ["مشاريعنا", "/projects"],
                 ["الأخبار", "/news"],
                 ["اتصل بنا", "/contact"],
@@ -113,14 +113,16 @@ const Footer = () => {
                   <div className="font-semibold text-white mb-1">
                     المكتب الرئيسي
                   </div>
-                  <div>بغداد - القادسية، شارع مجمع الوزراء، قرب الصابئة المندائية. </div>
+                  <div>
+                    بغداد - القادسية، شارع مجمع الوزراء، قرب الصابئة المندائية.{" "}
+                  </div>
                   <div>العراق</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-gray-400" />
                 <div>
-                  <div className="text-white font-semibold">
+                  <div className="text-white font-semibold" dir="ltr">
                     +964 770 123 4567
                   </div>
                   <div className="text-gray-400 text-xs">الخط الساخن</div>
@@ -142,14 +144,8 @@ const Footer = () => {
         </div>
 
         {/* الحقوق */}
-        <div className="border-t border-gray-800 pt-8 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div>© 2024 أفينيو. جميع الحقوق محفوظة.</div>
-          <div className="flex gap-6">
-            <Link href="#">سياسة الخصوصية</Link>
-            <Link href="#">الشروط والأحكام</Link>
-            <Link href="#">خريطة الموقع</Link>
-            <Link href="#">إخلاء المسؤولية</Link>
-          </div>
+        <div className="border-t border-gray-800 pt-8 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center gap-4" dir="ltr">
+          <p className="">&copy; {new Date().getFullYear()} Powered By <a href="https://swt-iq.com/" target="_blank" className="hover:text-white">SmartWave Technologies.</a></p>
         </div>
       </div>
     </footer>
