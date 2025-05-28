@@ -1,238 +1,398 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { ChevronRight, Clock, User, Eye, Search, Calendar } from "lucide-react"
-import Header from "@/components/header"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import {
+  ChevronRight,
+  Calendar,
+  User,
+  Eye,
+  Share2,
+  Search,
+  Filter,
+  ArrowRight,
+  TrendingUp,
+  Building,
+  Award,
+  Users,
+} from "lucide-react";
+import { Input } from "@/components/ui/input";
 
 export default function NewsPage() {
+  const featuredNews = [
+    {
+      id: 1,
+      title: "بلوم هولدنغ تطلق مشروع بلوم سيتي الجديد بقيمة 2 مليار درهم",
+      excerpt:
+        "مشروع سكني متكامل يضم 3000 وحدة سكنية في قلب دبي مع مرافق عالمية المستوى",
+      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      date: "15 يناير 2024",
+      author: "فريق الأخبار",
+      views: "2.5K",
+      category: "مشاريع جديدة",
+      featured: true,
+    },
+    {
+      id: 2,
+      title: "بلوم ليفينغ تحصل على جائزة أفضل مطور عقاري لعام 2024",
+      excerpt: "تقديراً لالتزامها بالجودة والابتكار في مجال التطوير العقاري",
+      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      date: "10 يناير 2024",
+      author: "إدارة التسويق",
+      views: "1.8K",
+      category: "جوائز وتكريم",
+      featured: true,
+    },
+  ];
+
+  const regularNews = [
+    {
+      id: 3,
+      title: "افتتاح المرحلة الثانية من مشروع بلوم جاردنز",
+      excerpt: "تسليم 500 وحدة سكنية جديدة مع مرافق ترفيهية متطورة",
+      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      date: "8 يناير 2024",
+      author: "قسم المشاريع",
+      views: "1.2K",
+      category: "تطوير المشاريع",
+    },
+    {
+      id: 4,
+      title: "شراكة استراتيجية مع أفضل المقاولين العالميين",
+      excerpt: "توقيع اتفاقيات جديدة لضمان أعلى معايير الجودة في التنفيذ",
+      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      date: "5 يناير 2024",
+      author: "الإدارة التنفيذية",
+      views: "950",
+      category: "شراكات",
+    },
+    {
+      id: 5,
+      title: "بلوم هولدنغ تستثمر في التقنيات الذكية للمنازل",
+      excerpt: "تطبيق أحدث تقنيات المنزل الذكي في جميع المشاريع الجديدة",
+      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      date: "2 يناير 2024",
+      author: "قسم التطوير",
+      views: "1.1K",
+      category: "تقنية",
+    },
+    {
+      id: 6,
+      title: "إطلاق برنامج الاستدامة البيئية في جميع المشاريع",
+      excerpt: "التزام بتقليل البصمة الكربونية وتطبيق معايير البناء الأخضر",
+      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      date: "28 ديسمبر 2023",
+      author: "قسم الاستدامة",
+      views: "800",
+      category: "استدامة",
+    },
+    {
+      id: 7,
+      title: "نمو مبيعات بلوم ليفينغ بنسبة 40% في العام الماضي",
+      excerpt: "أرقام قياسية جديدة تؤكد ثقة العملاء في جودة مشاريعنا",
+      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      date: "25 ديسمبر 2023",
+      author: "قسم المبيعات",
+      views: "1.5K",
+      category: "نتائج مالية",
+    },
+    {
+      id: 8,
+      title: "افتتاح مركز خدمة العملاء الجديد في دبي مول",
+      excerpt: "خدمات متطورة وفريق متخصص لتقديم أفضل تجربة للعملاء",
+      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      date: "20 ديسمبر 2023",
+      author: "خدمة العملاء",
+      views: "650",
+      category: "خدمات",
+    },
+  ];
+
+  const categories = [
+    "جميع الأخبار",
+    "مشاريع جديدة",
+    "جوائز وتكريم",
+    "تطوير المشاريع",
+    "شراكات",
+    "تقنية",
+    "استدامة",
+    "نتائج مالية",
+    "خدمات",
+  ];
+
   return (
     <div className="min-h-screen bg-white" dir="rtl">
-      <Header />
+      <Navbar />
 
-      {/* Spacer for fixed header */}
+      {/* Spacer for fixed Navbar */}
       <div className="h-24"></div>
 
       {/* Breadcrumb */}
       <div className="bg-gray-50 py-4">
         <div className="container mx-auto px-4">
-          <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-gray-600 hover:text-[#1a365d] transition-colors">
+          <nav className="flex items-center gap-2 text-2xl">
+            <Link
+              href="/"
+              className="text-gray-600 hover:text-[#9e1915] transition"
+            >
               الرئيسية
             </Link>
             <ChevronRight className="w-4 h-4 text-gray-400 rotate-180" />
-            <span className="text-[#1a365d] font-medium">الأخبار</span>
+            <span className="text-[#9e1915] font-medium">الأخبار</span>
           </nav>
         </div>
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[50vh] bg-gradient-to-r from-[#1a365d] to-[#2d5a87] overflow-hidden">
+      <section className="relative h-[50vh] bg-gradient-to-r from-[#9e1915] to-[#2d5a87] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/placeholder.svg?height=500&width=1600"
-            alt="News"
+            src="https://i.pinimg.com/736x/6a/5f/94/6a5f9423f4d61bbf677e7d057c50713f.jpg"
+            alt="أخبار بلوم هولدنغ"
             fill
             className="object-cover opacity-30"
+            priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a365d]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#9e1915]/80 to-transparent" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">الأخبار</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              الأخبار
+            </h1>
             <p className="text-xl md:text-2xl leading-relaxed opacity-90">
-              تابع آخر أخبار بلوم هولدنغ ومشاريعنا الجديدة والتطورات في السوق العقاري
+              آخر الأخبار والتطورات من عالم بلوم هولدنغ
             </p>
           </div>
         </div>
       </section>
 
-      {/* Search and Filter */}
-      <section className="py-8 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-            <div className="flex-1 max-w-md">
-              <div className="relative">
-                <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                <Input
-                  placeholder="ابحث في الأخبار..."
-                  className="pr-10 py-3 border-gray-300 focus:border-[#1a365d]"
-                />
-              </div>
+      <main className="bg-white">
+        {/* Featured News */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#9e1915] mb-4">
+                الأخبار المميزة
+              </h2>
+              <div className="w-20 h-1 bg-[#9e1915]"></div>
             </div>
-            <div className="flex gap-2 flex-wrap">
-              <Badge variant="outline" className="cursor-pointer hover:bg-[#1a365d] hover:text-white transition-colors">
-                جميع الأخبار
-              </Badge>
-              <Badge variant="outline" className="cursor-pointer hover:bg-[#1a365d] hover:text-white transition-colors">
-                مشاريع جديدة
-              </Badge>
-              <Badge variant="outline" className="cursor-pointer hover:bg-[#1a365d] hover:text-white transition-colors">
-                جوائز
-              </Badge>
-              <Badge variant="outline" className="cursor-pointer hover:bg-[#1a365d] hover:text-white transition-colors">
-                شراكات
-              </Badge>
-              <Badge variant="outline" className="cursor-pointer hover:bg-[#1a365d] hover:text-white transition-colors">
-                فعاليات
-              </Badge>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Featured News */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-[#1a365d] mb-4">الأخبار المميزة</h2>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            {/* Main Featured Article */}
-            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-0">
-              <div className="relative h-80 overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=800"
-                  alt="Featured News"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <Badge className="absolute top-4 right-4 bg-[#e53e3e] text-white px-3 py-1">
-                  عاجل
-                </Badge>
-                <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <div className="flex items-center gap-4 mb-3 text-sm">
-                    <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      <span>20 ديسمبر 2024</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Eye className="w-4 h-4" />
-                      <span>2,500 مشاهدة</span>
-                    </div>
-                  </div>
-                  <h3 className="text-2xl font-bold mb-2">
-                    بلوم هولدنغ تعلن عن إطلاق مشروع "بلوم سيتي" بقيمة 2 مليار درهم
-                  </h3>
-                  <p className="text-sm opacity-90">
-                    أكبر مشروع سكني متكامل في تاريخ الشركة يضم 3000 وحدة سكنية ومرافق تجارية وترفيهية شاملة...
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            {/* Secondary Featured Articles */}
-            <div className="space-y-6">
-              <Card className="group hover:shadow-xl transition-all duration-300 border-0">
-                <div className="flex gap-4 p-6">
-                  <div className="relative w-32 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+            <div className="grid lg:grid-cols-2 gap-8">
+              {featuredNews.map((news) => (
+                <Card
+                  key={news.id}
+                  className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-0"
+                >
+                  <div className="relative h-80 overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=100&width=150"
-                      alt="News 2"
+                      src={news.image || "/placeholder.svg"}
+                      alt={news.title}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-300"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
-                      <Clock className="w-4 h-4" />
-                      <span>18 ديسمبر 2024</span>
-                      <Badge variant="outline" className="text-xs">جوائز</Badge>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                    <Badge className="absolute top-4 right-4 bg-[#9e1915] text-white">
+                      {news.category}
+                    </Badge>
+                    <div className="absolute bottom-6 left-6 right-6 text-white">
+                      <h3 className="text-2xl font-bold mb-3 leading-tight">
+                        {news.title}
+                      </h3>
+                      <p className="text-white/90 mb-4 leading-relaxed">
+                        {news.excerpt}
+                      </p>
+                      <div className="flex items-center justify-between text-sm">
+                        <div className="flex items-center gap-4">
+                          <div className="flex items-center gap-1">
+                            <Calendar className="w-4 h-4" />
+                            <span>{news.date}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <User className="w-4 h-4" />
+                            <span>{news.author}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Eye className="w-4 h-4" />
+                            <span>{news.views}</span>
+                          </div>
+                        </div>
+                        <Button
+                          size="sm"
+                          className="bg-white/20 hover:bg-white/30 text-white border-white/30"
+                        >
+                          اقرأ المزيد
+                          <ArrowRight className="w-4 h-4 mr-2 rotate-180" />
+                        </Button>
+                      </div>
                     </div>
-                    <h3 className="text-lg font-bold text-[#1a365d] mb-2 group-hover:text-[#e53e3e] transition-colors">
-                      بلوم هولدنغ تحصد جائزة أفضل مطور عقاري للعام الثالث على التوالي
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      حصلت الشركة على الجائزة من معرض دبي العقاري تقديراً لإنجازاتها المتميزة...
-                    </p>
                   </div>
-                </div>
-              </Card>
-
-              <Card className="group hover:shadow-xl transition-all duration-300 border-0">
-                <div className="flex gap-4 p-6">
-                  <div className="relative w-32 h-24 flex-shrink-0 overflow-hidden rounded-lg">
-                    <Image
-                      src="/placeholder.svg?height=100&width=150"
-                      alt="News 3"
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
-                      <Clock className="w-4 h-4" />
-                      <span>15 ديسمبر 2024</span>
-                      <Badge variant="outline" className="text-xs">شراكات</Badge>
-                    </div>
-                    <h3 className="text-lg font-bold text-[#1a365d] mb-2 group-hover:text-[#e53e3e] transition-colors">
-                      شراكة استراتيجية مع بنك الإمارات دبي الوطني لتمويل المشاريع الجديدة
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      اتفاقية تمويل بقيمة 1.5 مليار درهم لدعم خطط التوسع المستقبلية...
-                    </p>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="group hover:shadow-xl transition-all duration-300 border-0">
-                <div className="flex gap-4 p-6">
-                  <div className="relative w-32 h-24 flex-shrink-0 overflow-hidden rounded-lg">
-                    <Image
-                      src="/placeholder.svg?height=100&width=150"
-                      alt="News 4"
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
-                      <Clock className="w-4 h-4" />
-                      <span>12 ديسمبر 2024</span>
-                      <Badge variant="outline" className="text-xs">مشاريع</Badge>
-                    </div>
-                    <h3 className="text-lg font-bold text-[#1a365d] mb-2 group-hover:text-[#e53e3e] transition-colors">
-                      اكتمال تسليم 95% من وحدات مشروع بلوم جاردنز
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      تسليم أكثر من 475 وحدة سكنية للعملاء قبل الموعد المحدد بشهرين...
-                    </p>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Latest News Grid */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-[#1a365d] mb-4">أحدث الأخبار</h2>
-          </div>
+        {/* Regular News */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#9e1915] mb-4">
+                آخر الأخبار
+              </h2>
+              <div className="w-20 h-1 bg-[#9e1915]"></div>
+            </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-white">
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="News 5"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <Badge className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 text-sm">
-                  مشاريع
-                </Badge>
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
-                  <div className="flex items-center gap-1">
-                    <Clock className="w-4 h-4" />
-                    <span>10 ديسمبر 2024</span>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {regularNews.map((news) => (
+                <Card
+                  key={news.id}
+                  className="group overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-white"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={news.image || "/placeholder.svg"}
+                      alt={news.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    <Badge className="absolute top-3 right-3 bg-[#9e1915] text-white text-xs">
+                      {news.category}
+                    </Badge>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <User className="w-4 h-4\
+                  <CardContent className="p-6">
+                    <h3 className="text-lg font-bold text-[#9e1915] mb-3 leading-tight group-hover:text-[#9e1915] transition-colors">
+                      {news.title}
+                    </h3>
+                    <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                      {news.excerpt}
+                    </p>
+                    <div className="flex items-center justify-between text-xs text-gray-500 mb-4">
+                      <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-1">
+                          <Calendar className="w-3 h-3" />
+                          <span>{news.date}</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Eye className="w-3 h-3" />
+                          <span>{news.views}</span>
+                        </div>
+                      </div>
+                      <Share2 className="w-4 h-4 cursor-pointer hover:text-[#9e1915] transition-colors" />
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className="w-6 h-6 bg-[#9e1915] rounded-full flex items-center justify-center">
+                          <User className="w-3 h-3 text-white" />
+                        </div>
+                        <span className="text-xs text-gray-600">
+                          {news.author}
+                        </span>
+                      </div>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="text-xs hover:bg-[#9e1915] hover:text-white"
+                      >
+                        اقرأ المزيد
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <Button className="bg-[#9e1915] hover:bg-[#2d5a87] text-white px-8 py-3">
+                عرض المزيد من الأخبار
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Newsletter Subscription */}
+        <section className="py-16 bg-gradient-to-r from-[#9e1915] to-[#2d5a87] text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              اشترك في نشرتنا الإخبارية
+            </h2>
+            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+              احصل على آخر الأخبار والتحديثات من بلوم هولدنغ مباشرة في بريدك
+              الإلكتروني
+            </p>
+            <div className="max-w-md mx-auto flex gap-4">
+              <Input
+                placeholder="أدخل بريدك الإلكتروني"
+                className="flex-1 bg-white/10 border-white/30 text-white placeholder:text-white/70"
+              />
+              <Button className="bg-[#9e1915] hover:bg-[#c53030] text-white px-6">
+                اشترك
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Quick Stats */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <Card className="p-6 text-center border-0 shadow-lg hover:shadow-2xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#2d5a87] rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <TrendingUp className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-3xl font-bold text-[#9e1915] mb-2">
+                    150+
+                  </div>
+                  <div className="text-gray-600">خبر منشور</div>
+                </CardContent>
+              </Card>
+
+              <Card className="p-6 text-center border-0 shadow-lg hover:shadow-2xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#c53030] rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Building className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-3xl font-bold text-[#9e1915] mb-2">
+                    25+
+                  </div>
+                  <div className="text-gray-600">مشروع مغطى</div>
+                </CardContent>
+              </Card>
+
+              <Card className="p-6 text-center border-0 shadow-lg hover:shadow-2xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Award className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-3xl font-bold text-[#9e1915] mb-2">
+                    10+
+                  </div>
+                  <div className="text-gray-600">جائزة وتكريم</div>
+                </CardContent>
+              </Card>
+
+              <Card className="p-6 text-center border-0 shadow-lg hover:shadow-2xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-3xl font-bold text-[#9e1915] mb-2">
+                    50K+
+                  </div>
+                  <div className="text-gray-600">قارئ شهرياً</div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </div>
+  );
+}
