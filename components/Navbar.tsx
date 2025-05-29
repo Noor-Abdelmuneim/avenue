@@ -109,7 +109,7 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="lg:hidden mt-2 pb-4 border-t bg-white rounded-lg shadow-lg animate-slideDown">
+            <div className="lg:hidden mt-2 pb-4 bg-white rounded-lg shadow-lg animate-slideDown">
               <div className="flex flex-col gap-4 pt-4 px-4">
                 {[
                   { href: "/", label: "الرئيسية" },
@@ -127,9 +127,11 @@ const Navbar = () => {
                     {label}
                   </Link>
                 ))}
+                <a href="/contact">
                 <Button className="bg-gradient-to-r from-[#9e1915] to-[#d5241e] text-white rounded-full py-2 mt-2 shadow-md hover:shadow-lg transition-transform hover:scale-105">
                   احجز استشارة مجانية
                 </Button>
+                </a>
               </div>
             </div>
           )}

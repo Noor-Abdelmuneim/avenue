@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "أفنيو للأستثمار والتطوير العقاري - Avenue Real Estate",
   description: "شركة استثمارية رائدة تهدف إلى بناء مستقبل أفضل من خلال استثماراتها المتنوعة والمدروسة",
   keywords: "استثمار, عقارات, شراكات, أفنيو للأستثمار والتطوير العقاري, بغداد العراق",
+  icons:"/Avenue Logo Colored.png",
 }
 
 export default function RootLayout({

@@ -1,7 +1,6 @@
 "use client";
 
 import type React from "react";
-
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,13 +16,8 @@ import {
   MapPin,
   Phone,
   Mail,
-  Clock,
+  Lock,
   Send,
-  MessageCircle,
-  Calendar,
-  User,
-  Building,
-  Globe,
   Facebook,
   Twitter,
   Instagram,
@@ -33,6 +27,15 @@ import {
 } from "lucide-react";
 
 export default function ContactPage() {
+  const [isMapActive, setIsMapActive] = useState(false);
+
+  const handleMapClick = () => {
+    setIsMapActive(true);
+  };
+
+  const handleMapLock = () => {
+    setIsMapActive(false);
+  };
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -58,11 +61,9 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
     console.log("Form submitted:", formData);
     setIsSubmitted(true);
 
-    // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
@@ -80,7 +81,10 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "العنوان",
-      details: ["شارع فلسطين، بجانب مول الحياة", "بغداد، العراق"],
+      details: [
+        "القادسية، شارع مجمع الوزراء، قرب الصابئة المندائية",
+        "بغداد، العراق",
+      ],
       color: "from-gray-600 to-[#9e1915]",
     },
     {
@@ -95,22 +99,13 @@ export default function ContactPage() {
       details: ["info@avenue-iq.com", "support@avenue-iq.com"],
       color: "from-[#1a365d] to-[#9e1915]",
     },
-    {
-      icon: Clock,
-      title: "ساعات العمل",
-      details: ["الأحد - الخميس: 9:00 ص - 5:00 م", "الجمعة والسبت: عطلة رسمية"],
-      color: "from-[#1a365d] to-[#9e1915]",
-    },
   ];
 
   return (
     <div className="min-h-screen bg-white" dir="rtl">
       <Navbar />
+      <div className="h-1 md:h-5"></div>
 
-      {/* Spacer for fixed Navbar */}
-      <div className="h-24"></div>
-
-      {/* Breadcrumb */}
       <div className="bg-gray-50 py-4">
         <div className="container mx-auto px-4">
           <nav className="flex items-center gap-2 text-2xl">
@@ -153,7 +148,7 @@ export default function ContactPage() {
 
       <main className="bg-white">
         {/* Contact Information */}
-        <section className="py-20">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="text-gray-600 font-semibold mb-4 text-lg">
@@ -168,7 +163,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {contactInfo.map((info, index) => (
                 <Card
                   key={index}
@@ -198,11 +193,11 @@ export default function ContactPage() {
         </section>
 
         {/* Contact Form and Map */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-8">
           <div className="container mx-auto px-4">
             <div className="grid gap-16">
               {/* Contact Form */}
-              <div className="w-2/3 mx-auto">
+              <div className="mx-auto">
                 <div className="mb-8">
                   <h2 className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4">
                     أرسل لنا رسالة
@@ -262,27 +257,6 @@ export default function ContactPage() {
                               required
                               className="border-gray-300 focus:border-[#1a365d] focus:ring-[#1a365d]"
                               placeholder="أدخل بريدك الإلكتروني"
-                            />
-                          </div>
-                        </div>
-
-                        <div>
-                          <div>
-                            <Label
-                              htmlFor="phone"
-                              className="text-[#1a365d] font-medium mb-2 block"
-                            >
-                              رقم الهاتف *
-                            </Label>
-                            <Input
-                              id="phone"
-                              name="phone"
-                              type="tel"
-                              value={formData.phone}
-                              onChange={handleInputChange}
-                              required
-                              className="border-gray-300 focus:border-[#1a365d] focus:ring-[#1a365d]"
-                              placeholder="أدخل رقم هاتفك"
                             />
                           </div>
                         </div>
@@ -354,15 +328,32 @@ export default function ContactPage() {
                       className="absolute inset-0 w-full h-full"
                     ></iframe>
                     {/* Overlay محتوى الخريطة */}
-                    <div className="absolute inset-0 bg-[#1a365d]/20 flex items-center justify-center">
-                      <div className="text-center text-white">
-                        <MapPin className="w-12 h-12 mx-auto mb-2" />
-                        <p className="text-lg font-semibold">
-                          موقعنا على الخريطة
-                        </p>
-                        <p className="text-sm opacity-90">العراق بغداد</p>
+                    {!isMapActive && (
+                      <div
+                        className="absolute inset-0 bg-[#1a365d]/20 flex items-center justify-center cursor-pointer transition-opacity duration-300"
+                        onClick={handleMapClick}
+                      >
+                        <div className="text-center text-white">
+                          <MapPin className="w-12 h-12 mx-auto mb-2" />
+                          <p className="text-lg font-semibold">
+                            موقعنا على الخريطة
+                          </p>
+                          <p className="text-sm opacity-90">العراق بغداد</p>
+                          <p className="text-xs mt-2">(انقر لتفعيل الخريطة)</p>
+                        </div>
                       </div>
-                    </div>
+                    )}
+
+                    {/* زر إعادة قفل الخريطة */}
+                    {isMapActive && (
+                      <button
+                        onClick={handleMapLock}
+                        className="absolute top-2 right-2 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm hover:bg-opacity-90 transition-all flex items-center gap-1"
+                      >
+                        <Lock className="w-4 h-4" />
+                        قفل الخريطة
+                      </button>
+                    )}
                   </div>
                 </Card>
               </div>

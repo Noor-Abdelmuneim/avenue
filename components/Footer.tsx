@@ -92,7 +92,7 @@ const Footer = () => {
               ].map(([label, icon], i) => (
                 <li key={i}>
                   <Link
-                    href="#"
+                    href="/what-we-do"
                     className="flex items-center gap-2 text-gray-300 hover:text-white transition"
                   >
                     {icon}

@@ -46,7 +46,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-14 bg-gray-50">
       <div className="container max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -141,11 +141,14 @@ const Projects = () => {
         </div>
 
         {/* Button */}
+        
         <div className="text-center mt-12">
+          <a href="/projects">
           <Button className="bg-[#9e1915] hover:bg-[#e8251e] text-white px-8 py-3 rounded-full">
             عرض جميع المشاريع
             <ArrowLeft className="w-5 h-5 mr-3" />
           </Button>
+          </a>
         </div>
       </div>
     </section>

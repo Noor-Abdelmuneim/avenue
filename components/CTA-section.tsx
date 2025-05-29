@@ -15,26 +15,31 @@ const CTA = () => {
             هل أنت مستعد لتأخذ خطوتك الاستثمارية التالية؟
           </h2>
           <p className="text-xl md:text-2xl mb-10 text-gray-100 leading-relaxed">
-            تواصل معنا اليوم واكتشف كيف يمكن لأفينيو أن تساعدك في تحقيق أهدافك العقارية
-            والاستثمارية من خلال حلول مبتكرة وخبرة راسخة.
+            تواصل معنا اليوم واكتشف كيف يمكن لأفينيو أن تساعدك في تحقيق أهدافك
+            العقارية والاستثمارية من خلال حلول مبتكرة وخبرة راسخة.
           </p>
 
           {/* الأزرار */}
+
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
-            <Button
-              size="lg"
-              className="bg-white text-[#9e1915] hover:bg-gray-100 px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition-all"
-            >
-              احجز استشارتك الآن
-              <ArrowLeft className="w-6 h-6 mr-3" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#9e1915] px-10 py-4 rounded-full text-lg font-semibold backdrop-blur-sm bg-white/10"
-            >
-              تحميل البروفايل التعريفي
-            </Button>
+            <a href="/contact">
+              <Button
+                size="lg"
+                className="bg-white text-[#9e1915] hover:bg-gray-100 px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition-all"
+              >
+                احجز استشارتك الآن
+                <ArrowLeft className="w-6 h-6 mr-3" />
+              </Button>
+            </a>
+            <a href="/AVENUE Real Estate.pdf" download>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-white text-white hover:bg-white hover:text-[#9e1915] px-10 py-4 rounded-full text-lg font-semibold backdrop-blur-sm bg-white/10"
+              >
+                تحميل البروفايل التعريفي
+              </Button>
+            </a>
           </div>
 
           {/* معلومات التواصل */}
@@ -42,7 +47,9 @@ const CTA = () => {
             <div>
               <Phone className="w-8 h-8 mx-auto mb-2 text-gray-300" />
               <div className="font-semibold text-lg mb-1">اتصل بنا</div>
-              <div className="text-gray-200 text-sm" dir="ltr">+964 770 123 4567</div>
+              <div className="text-gray-200 text-sm" dir="ltr">
+                +964 770 123 4567
+              </div>
             </div>
             <div>
               <Mail className="w-8 h-8 mx-auto mb-2 text-gray-300" />

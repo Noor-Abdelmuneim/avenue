@@ -28,7 +28,8 @@ export default function NewsPage() {
       title: "بلوم هولدنغ تطلق مشروع بلوم سيتي الجديد بقيمة 2 مليار درهم",
       excerpt:
         "مشروع سكني متكامل يضم 3000 وحدة سكنية في قلب دبي مع مرافق عالمية المستوى",
-      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      image:
+        "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
       date: "15 يناير 2024",
       author: "فريق الأخبار",
       views: "2.5K",
@@ -39,7 +40,8 @@ export default function NewsPage() {
       id: 2,
       title: "بلوم ليفينغ تحصل على جائزة أفضل مطور عقاري لعام 2024",
       excerpt: "تقديراً لالتزامها بالجودة والابتكار في مجال التطوير العقاري",
-      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      image:
+        "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
       date: "10 يناير 2024",
       author: "إدارة التسويق",
       views: "1.8K",
@@ -53,7 +55,8 @@ export default function NewsPage() {
       id: 3,
       title: "افتتاح المرحلة الثانية من مشروع بلوم جاردنز",
       excerpt: "تسليم 500 وحدة سكنية جديدة مع مرافق ترفيهية متطورة",
-      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      image:
+        "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
       date: "8 يناير 2024",
       author: "قسم المشاريع",
       views: "1.2K",
@@ -63,7 +66,8 @@ export default function NewsPage() {
       id: 4,
       title: "شراكة استراتيجية مع أفضل المقاولين العالميين",
       excerpt: "توقيع اتفاقيات جديدة لضمان أعلى معايير الجودة في التنفيذ",
-      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      image:
+        "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
       date: "5 يناير 2024",
       author: "الإدارة التنفيذية",
       views: "950",
@@ -73,7 +77,8 @@ export default function NewsPage() {
       id: 5,
       title: "بلوم هولدنغ تستثمر في التقنيات الذكية للمنازل",
       excerpt: "تطبيق أحدث تقنيات المنزل الذكي في جميع المشاريع الجديدة",
-      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      image:
+        "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
       date: "2 يناير 2024",
       author: "قسم التطوير",
       views: "1.1K",
@@ -83,7 +88,8 @@ export default function NewsPage() {
       id: 6,
       title: "إطلاق برنامج الاستدامة البيئية في جميع المشاريع",
       excerpt: "التزام بتقليل البصمة الكربونية وتطبيق معايير البناء الأخضر",
-      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      image:
+        "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
       date: "28 ديسمبر 2023",
       author: "قسم الاستدامة",
       views: "800",
@@ -93,7 +99,8 @@ export default function NewsPage() {
       id: 7,
       title: "نمو مبيعات بلوم ليفينغ بنسبة 40% في العام الماضي",
       excerpt: "أرقام قياسية جديدة تؤكد ثقة العملاء في جودة مشاريعنا",
-      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      image:
+        "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
       date: "25 ديسمبر 2023",
       author: "قسم المبيعات",
       views: "1.5K",
@@ -103,7 +110,8 @@ export default function NewsPage() {
       id: 8,
       title: "افتتاح مركز خدمة العملاء الجديد في دبي مول",
       excerpt: "خدمات متطورة وفريق متخصص لتقديم أفضل تجربة للعملاء",
-      image: "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
+      image:
+        "https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg",
       date: "20 ديسمبر 2023",
       author: "خدمة العملاء",
       views: "650",
@@ -128,7 +136,7 @@ export default function NewsPage() {
       <Navbar />
 
       {/* Spacer for fixed Navbar */}
-      <div className="h-24"></div>
+      <div className="h-1 md:h-5"></div>
 
       {/* Breadcrumb */}
       <div className="bg-gray-50 py-4">
@@ -211,14 +219,6 @@ export default function NewsPage() {
                             <Calendar className="w-4 h-4" />
                             <span>{news.date}</span>
                           </div>
-                          <div className="flex items-center gap-1">
-                            <User className="w-4 h-4" />
-                            <span>{news.author}</span>
-                          </div>
-                          <div className="flex items-center gap-1">
-                            <Eye className="w-4 h-4" />
-                            <span>{news.views}</span>
-                          </div>
                         </div>
                         <Button
                           size="sm"
@@ -254,7 +254,7 @@ export default function NewsPage() {
                 >
                   <div className="relative h-48 overflow-hidden">
                     <Image
-                      src={news.image || "/placeholder.svg"}
+                      src={news.image}
                       alt={news.title}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -282,7 +282,6 @@ export default function NewsPage() {
                           <span>{news.views}</span>
                         </div>
                       </div>
-                      <Share2 className="w-4 h-4 cursor-pointer hover:text-[#9e1915] transition-colors" />
                     </div>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -304,12 +303,6 @@ export default function NewsPage() {
                   </CardContent>
                 </Card>
               ))}
-            </div>
-
-            <div className="text-center mt-12">
-              <Button className="bg-[#9e1915] hover:bg-[#2d5a87] text-white px-8 py-3">
-                عرض المزيد من الأخبار
-              </Button>
             </div>
           </div>
         </section>

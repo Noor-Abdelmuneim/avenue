@@ -22,9 +22,8 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white" dir="rtl">
       <Navbar />
-      <div className="h-24" />
+      <div className="h-1 md:h-5" />
 
-      {/* Breadcrumb */}
       <div className="bg-gray-50 py-4">
         <div className="container mx-auto px-4">
           <nav className="flex items-center gap-2 text-2xl">

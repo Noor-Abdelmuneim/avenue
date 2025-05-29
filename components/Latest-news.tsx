@@ -11,7 +11,8 @@ const LatestNews = () => {
         "شركة ** توقع اتفاقية شراكة استراتيجية مع مجموعة الإمارات للاستثمار",
       date: "15 ديسمبر 2024",
       category: "أخبار الشركة",
-      image: "https://i.pinimg.com/736x/3f/7b/0a/3f7b0a3b789701bf145f22d2095a3820.jpg",
+      image:
+        "https://i.pinimg.com/736x/3f/7b/0a/3f7b0a3b789701bf145f22d2095a3820.jpg",
       excerpt:
         "وقعت الشركة اتفاقية شراكة استراتيجية مع مجموعة الإمارات للاستثمار بهدف تطوير مشاريع عقارية جديدة بقيمة تزيد عن 500 مليون درهم...",
       readTime: "5 دقائق",
@@ -21,7 +22,8 @@ const LatestNews = () => {
       title: "إطلاق مشروع عقاري جديد في قلب دبي بقيمة 800 مليون درهم",
       date: "10 ديسمبر 2024",
       category: "مشاريع جديدة",
-      image: "https://i.pinimg.com/736x/3f/7b/0a/3f7b0a3b789701bf145f22d2095a3820.jpg",
+      image:
+        "https://i.pinimg.com/736x/3f/7b/0a/3f7b0a3b789701bf145f22d2095a3820.jpg",
       excerpt:
         "أعلنت الشركة عن إطلاق مشروعها العقاري الجديد 'واحة دبي' الذي يضم 300 وحدة سكنية فاخرة ومرافق ترفيهية متكاملة...",
       readTime: "7 دقائق",
@@ -31,7 +33,8 @@ const LatestNews = () => {
       title: "حصول الشركة على جائزة أفضل شركة استثمارية في الإمارات لعام 2024",
       date: "5 ديسمبر 2024",
       category: "جوائز وتكريم",
-      image: "https://i.pinimg.com/736x/3f/7b/0a/3f7b0a3b789701bf145f22d2095a3820.jpg",
+      image:
+        "https://i.pinimg.com/736x/3f/7b/0a/3f7b0a3b789701bf145f22d2095a3820.jpg",
       excerpt:
         "حصلت الشركة على جائزة أفضل شركة استثمارية في دولة الإمارات العربية المتحدة لعام 2024 من مؤسسة الشرق الأوسط للتميز...",
       readTime: "3 دقائق",
@@ -41,7 +44,8 @@ const LatestNews = () => {
       title: "افتتاح مكتب جديد في أبوظبي لتوسيع نطاق الخدمات",
       date: "1 ديسمبر 2024",
       category: "توسعات",
-      image: "https://i.pinimg.com/736x/3f/7b/0a/3f7b0a3b789701bf145f22d2095a3820.jpg",
+      image:
+        "https://i.pinimg.com/736x/3f/7b/0a/3f7b0a3b789701bf145f22d2095a3820.jpg",
       excerpt:
         "افتتحت الشركة مكتبها الجديد في أبوظبي كجزء من خطة التوسع الاستراتيجية لتقديم خدمات أفضل لعملائها في جميع أنحاء الدولة...",
       readTime: "4 دقائق",
@@ -51,7 +55,7 @@ const LatestNews = () => {
   return (
     <>
       {/* News Section */}
-      <section className="py-20">
+      <section className="py-14">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-block bg-gray-100 text-[#9e1915] px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -104,13 +108,15 @@ const LatestNews = () => {
                     {article.excerpt}
                   </p>
                   <div className="flex items-center justify-between">
-                    <Button
-                      variant="ghost"
-                      className="p-0 h-auto text-[#9e1915] hover:text-blue-700 font-semibold"
-                    >
-                      اقرأ المزيد
-                      <ArrowLeft className="w-4 h-4 mr-2" />
-                    </Button>
+                    <a href="/news">
+                      <Button
+                        variant="ghost"
+                        className="p-0 h-auto text-[#9e1915] hover:text-blue-700 font-semibold"
+                      >
+                        اقرأ المزيد
+                        <ArrowLeft className="w-4 h-4 mr-2" />
+                      </Button>
+                    </a>
                     <span className="text-xs text-gray-500">
                       {article.readTime}
                     </span>
@@ -121,10 +127,12 @@ const LatestNews = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button className="bg-[#9e1915] hover:bg-[#9e1915] text-white px-8 py-3 rounded-full">
-              عرض جميع الأخبار
-              <ArrowLeft className="w-5 h-5 mr-3" />
-            </Button>
+            <a href="/news">
+              <Button className="bg-[#9e1915] hover:bg-[#9e1915] text-white px-8 py-3 rounded-full">
+                عرض جميع الأخبار
+                <ArrowLeft className="w-5 h-5 mr-3" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
