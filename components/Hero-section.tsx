@@ -15,7 +15,7 @@ const heroSlides = [
     buttonText: "اكتشف المزيد",
     videoText: "شاهد الفيديو",
     pageLink: "/about",
-    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoLink: "https://www.youtube.com/",
   },
   {
     image: "https://i.pinimg.com/736x/28/01/83/280183b564e3c2c996dc0714153ee6ef.jpg",
@@ -25,7 +25,7 @@ const heroSlides = [
     buttonText: "تعرف على رؤيتنا",
     videoText: "رؤية وأهداف",
     pageLink: "/about",
-    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoLink: "https://www.youtube.com/",
   },
   {
     image: "https://i.pinimg.com/736x/a5/56/e8/a556e8fc7c3146e625ebdb58d0fec548.jpg",
@@ -35,7 +35,7 @@ const heroSlides = [
     buttonText: "اعرف المزيد",
     videoText: "مشاريع مستدامة",
     pageLink: "/projects",
-    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoLink: "https://www.youtube.com/",
   },
 ];
 
