@@ -3,18 +3,22 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import {
   ChevronRight,
+  Search,
   MapPin,
   Home,
   Building,
+  Filter,
   ArrowRight,
   Calendar,
 } from "lucide-react";
 
 export default function ProjectsPage() {
+  // Project categories
   const categories = [
     { id: "all", name: "جميع المشاريع" },
     { id: "residential", name: "سكني" },
@@ -23,6 +27,7 @@ export default function ProjectsPage() {
     { id: "hospitality", name: "ضيافة" },
   ];
 
+  // Featured projects
   const featuredProjects = [
     {
       id: 1,
@@ -31,7 +36,7 @@ export default function ProjectsPage() {
       type: "سكني",
       location: "دبي لاند",
       image:
-        "https://i.pinimg.com/736x/d6/ac/e6/d6ace656ccf8b162f35283aa140f7eb5.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "متاح الآن",
       statusColor: "bg-green-500",
       priceFrom: "850,000",
@@ -47,7 +52,7 @@ export default function ProjectsPage() {
       type: "سكني",
       location: "وسط دبي",
       image:
-        "https://i.pinimg.com/736x/d6/ac/e6/d6ace656ccf8b162f35283aa140f7eb5.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "قريباً",
       statusColor: "bg-orange-500",
       priceFrom: "1,200,000",
@@ -58,6 +63,7 @@ export default function ProjectsPage() {
     },
   ];
 
+  // All projects
   const allProjects = [
     ...featuredProjects,
     {
@@ -67,7 +73,7 @@ export default function ProjectsPage() {
       type: "سكني",
       location: "دبي مارينا",
       image:
-        "https://i.pinimg.com/736x/d6/ac/e6/d6ace656ccf8b162f35283aa140f7eb5.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "تحت الإنشاء",
       statusColor: "bg-blue-500",
       priceFrom: "1,500,000",
@@ -82,7 +88,7 @@ export default function ProjectsPage() {
       type: "سكني",
       location: "الخليج التجاري",
       image:
-        "https://i.pinimg.com/736x/d6/ac/e6/d6ace656ccf8b162f35283aa140f7eb5.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "متاح الآن",
       statusColor: "bg-green-500",
       priceFrom: "950,000",
@@ -97,7 +103,7 @@ export default function ProjectsPage() {
       type: "تجاري",
       location: "شارع الشيخ زايد",
       image:
-        "https://i.pinimg.com/736x/d6/ac/e6/d6ace656ccf8b162f35283aa140f7eb5.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "متاح الآن",
       statusColor: "bg-green-500",
       priceFrom: "1,800,000",
@@ -112,7 +118,7 @@ export default function ProjectsPage() {
       type: "سكني",
       location: "جميرا فيليج سيركل",
       image:
-        "https://i.pinimg.com/736x/d6/ac/e6/d6ace656ccf8b162f35283aa140f7eb5.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "قريباً",
       statusColor: "bg-orange-500",
       priceFrom: "1,100,000",
@@ -127,7 +133,7 @@ export default function ProjectsPage() {
       type: "ضيافة",
       location: "داون تاون دبي",
       image:
-        "https://i.pinimg.com/736x/d6/ac/e6/d6ace656ccf8b162f35283aa140f7eb5.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "تحت الإنشاء",
       statusColor: "bg-blue-500",
       priceFrom: null,
@@ -142,7 +148,7 @@ export default function ProjectsPage() {
       type: "متعدد الاستخدامات",
       location: "دبي هيلز استيت",
       image:
-        "https://i.pinimg.com/736x/d6/ac/e6/d6ace656ccf8b162f35283aa140f7eb5.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "قريباً",
       statusColor: "bg-orange-500",
       priceFrom: "1,300,000",
@@ -160,7 +166,7 @@ export default function ProjectsPage() {
       <div className="h-1 md:h-5"></div>
 
       {/* Breadcrumb */}
-      <div className="bg-gray-50 py-4">
+      <div className="font-snd bg-gray-50 py-4">
         <div className="container mx-auto px-4">
           <nav className="flex items-center gap-2 text-2xl">
             <Link
@@ -176,10 +182,10 @@ export default function ProjectsPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] bg-gradient-to-r from-[#1a365d] to-[#2d5a87] overflow-hidden">
+      <section className="font-snd relative h-[60vh] bg-gradient-to-r from-[#1a365d] to-[#2d5a87] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://i.pinimg.com/736x/fe/a4/6f/fea46ffd03a57ab2db6f4df034b8cbe6.jpg"
+            src="https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg"
             alt="مشاريع بلوم هولدنغ"
             fill
             className="object-cover opacity-30"
@@ -203,12 +209,12 @@ export default function ProjectsPage() {
       <main className="bg-white">
         {/* Featured Projects */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="font-snd container mx-auto px-4">
             <div className="mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-600 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4">
                 المشاريع المميزة
               </h2>
-              <div className="w-20 h-1 bg-[#9e1915]"></div>
+              <div className="w-20 h-1 bg-[#e53e3e]"></div>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -278,12 +284,12 @@ export default function ProjectsPage() {
 
         {/* All Projects */}
         <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
+          <div className="font-snd container mx-auto px-4">
             <div className="mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-600 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4">
                 جميع المشاريع
               </h2>
-              <div className="w-20 h-1 bg-[#9e1915]"></div>
+              <div className="w-20 h-1 bg-[#e53e3e]"></div>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -333,7 +339,7 @@ export default function ProjectsPage() {
                     </p>
                     <div className="flex justify-between items-center">
                       <Link href={`/projects/${project.slug}`}>
-                        <Button className="bg-[#9e1915] hover:bg-[#c53030] text-white">
+                        <Button className="bg-[#e53e3e] hover:bg-[#c53030] text-white">
                           عرض التفاصيل
                         </Button>
                       </Link>
@@ -346,10 +352,10 @@ export default function ProjectsPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-[#9e1915] via-gray-600 to-[#9e1915] text-white relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10"></div>
+        <section className="py-20 bg-gradient-to-r from-[#9e1915] via-gray-600 to-[#9e1915] text-white">
+          <div className="font-snd absolute inset-0 opacity-10"></div>
           <div className="relative container mx-auto px-4 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               هل تبحث عن منزل أحلامك؟
             </h2>
             <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
@@ -358,7 +364,7 @@ export default function ProjectsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a href="/contact">
-                <Button className="bg-[#9e1915] hover:bg-[#c53030] text-white px-10 py-4 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <Button className="bg-[#e53e3e] hover:bg-[#c53030] text-white px-10 py-4 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
                   تواصل مع مستشار عقاري
                 </Button>
               </a>

@@ -5,7 +5,7 @@ import { ArrowLeft, Award, CheckCircle } from "lucide-react";
 const About = () => {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="container max-w-7xl mx-auto px-4">
+      <div className="container max-w-7xl mx-auto px-4 font-snd">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1 relative">
             <Image

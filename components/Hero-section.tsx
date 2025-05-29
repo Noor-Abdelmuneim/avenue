@@ -65,7 +65,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="font-snd relative h-screen overflow-hidden">
       {heroSlides.map((slide, index) => (
         <div
           key={index}
@@ -85,13 +85,13 @@ const HeroSection = () => {
           <div className="absolute inset-0 flex items-center">
             <div className="container mx-auto px-4">
               <div className="max-w-7xl mx-20">
-                <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
+                <h1 className="text-5xl md:text-6xl font-bold mb-8 text-white leading-tight">
                   {slide.title}
                 </h1>
                 <h2 className="text-2xl md:text-3xl mb-6 text-[#9e1915] font-medium">
                   {slide.subtitle}
                 </h2>
-                <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed max-w-2xl">
+                <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed max-w-4xl">
                   {slide.description}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">

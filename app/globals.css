@@ -59,3 +59,11 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
+
+
+@font-face {
+  font-family: "GE SND Book";
+  src: url("/fonts/GE-SND-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

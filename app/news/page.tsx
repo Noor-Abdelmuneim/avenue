@@ -140,7 +140,7 @@ export default function NewsPage() {
 
       {/* Breadcrumb */}
       <div className="bg-gray-50 py-4">
-        <div className="container mx-auto px-4">
+        <div className="font-snd container mx-auto px-4">
           <nav className="flex items-center gap-2 text-2xl">
             <Link
               href="/"
@@ -155,7 +155,7 @@ export default function NewsPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[50vh] bg-gradient-to-r from-[#9e1915] to-[#2d5a87] overflow-hidden">
+      <section className="font-snd relative h-[50vh] bg-gradient-to-r from-[#9e1915] to-[#2d5a87] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="https://i.pinimg.com/736x/6a/5f/94/6a5f9423f4d61bbf677e7d057c50713f.jpg"
@@ -180,7 +180,7 @@ export default function NewsPage() {
 
       <main className="bg-white">
         {/* Featured News */}
-        <section className="py-16">
+        <section className="font-snd py-16">
           <div className="container mx-auto px-4">
             <div className="mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-[#9e1915] mb-4">
@@ -237,7 +237,7 @@ export default function NewsPage() {
         </section>
 
         {/* Regular News */}
-        <section className="py-16 bg-gray-50">
+        <section className="font-snd py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-[#9e1915] mb-4">
@@ -308,7 +308,7 @@ export default function NewsPage() {
         </section>
 
         {/* Newsletter Subscription */}
-        <section className="py-16 bg-gradient-to-r from-[#9e1915] to-[#2d5a87] text-white">
+        <section className="font-snd py-16 bg-gradient-to-r from-[#9e1915] to-[#2d5a87] text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               اشترك في نشرتنا الإخبارية
@@ -331,7 +331,7 @@ export default function NewsPage() {
 
         {/* Quick Stats */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="font-snd container mx-auto px-4">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <Card className="p-6 text-center border-0 shadow-lg hover:shadow-2xl transition-all duration-300">
                 <CardContent className="p-0">

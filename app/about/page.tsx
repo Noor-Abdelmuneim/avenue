@@ -24,7 +24,7 @@ export default function AboutPage() {
       <Navbar />
       <div className="h-1 md:h-5" />
 
-      <div className="bg-gray-50 py-4">
+      <div className="bg-gray-50 py-4 font-snd">
         <div className="container mx-auto px-4">
           <nav className="flex items-center gap-2 text-2xl">
             <Link
@@ -47,7 +47,7 @@ export default function AboutPage() {
           fill
           className="object-cover opacity-20 absolute inset-0"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#9e1915]/80 to-transparent" />
+        <div className="font-snd absolute inset-0 bg-gradient-to-r from-[#9e1915]/80 to-transparent " />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">من نحن</h1>
@@ -60,7 +60,7 @@ export default function AboutPage() {
 
       {/* قصتنا */}
       <section className="py-20">
-        <div className="container mx-auto px-8">
+        <div className="font-snd container mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="text-[#e53e3e] font-semibold mb-4 text-lg">
@@ -113,7 +113,7 @@ export default function AboutPage() {
 
       {/* الرؤية والرسالة */}
       <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="font-snd container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="text-[#e53e3e] font-semibold mb-4 text-lg">
               رؤيتنا ورسالتنا
@@ -161,7 +161,7 @@ export default function AboutPage() {
 
       {/* قيمنا */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="font-snd container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="text-[#e53e3e] font-semibold mb-4 text-lg">
               قيمنا
@@ -213,7 +213,7 @@ export default function AboutPage() {
       </section>
       {/* فريق القيادة */}
       <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="font-snd container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="text-[#e53e3e] font-semibold mb-4 text-lg">
               فريق القيادة
@@ -228,7 +228,7 @@ export default function AboutPage() {
           </div>
 
           {/* الرئيس ونائب الرئيس */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="font-snd grid md:grid-cols-2 gap-8 mb-16">
             <Card className="text-center p-8 border-0 shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
               <CardContent className="p-0">
                 <div className="relative mb-6">
@@ -293,8 +293,8 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-[#9e1915] via-[#2d5a87] to-[#9e1915] text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+        <div className="font-snd container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             كن جزءًا من التغيير
           </h2>
           <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">

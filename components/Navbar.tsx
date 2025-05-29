@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-[#9e1915] text-white text-xs py-1.5 px-4">
+      <div className="bg-[#9e1915] text-white text-xs py-1.5 px-4 font-snd">
         <div className="container mx-auto flex justify-between items-center">
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-2" dir="ltr">
@@ -62,7 +62,7 @@ const Navbar = () => {
           isScrolled ? "bg-white shadow-md" : "bg-white/80 backdrop-blur-md"
         }`}
       >
-        <nav className="container mx-auto px-4 py-3">
+        <nav className="container mx-auto px-4 py-3 font-snd">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
               <img
@@ -109,7 +109,7 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="lg:hidden mt-2 pb-4 bg-white rounded-lg shadow-lg animate-slideDown">
+            <div className="font-snd lg:hidden mt-2 pb-4 bg-white rounded-lg shadow-lg animate-slideDown">
               <div className="flex flex-col gap-4 pt-4 px-4">
                 {[
                   { href: "/", label: "الرئيسية" },

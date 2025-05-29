@@ -20,7 +20,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-white py-16">
+    <footer className="font-snd bg-slate-900 text-white py-16">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* شعار وتعريف */}

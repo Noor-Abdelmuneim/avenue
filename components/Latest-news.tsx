@@ -56,7 +56,7 @@ const LatestNews = () => {
     <>
       {/* News Section */}
       <section className="py-14">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 font-snd">
           <div className="text-center mb-16">
             <div className="inline-block bg-gray-100 text-[#9e1915] px-4 py-2 rounded-full text-sm font-medium mb-6">
               الأخبار والفعاليات

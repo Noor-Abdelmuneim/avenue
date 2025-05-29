@@ -9,9 +9,9 @@ const CTA = () => {
       {/* خلفية شفافة */}
       <div className="absolute inset-0 bg-[url('/images/cta-bg.jpg')] bg-cover bg-center opacity-10"></div>
 
-      <div className="container max-w-6xl mx-auto px-4 relative z-10">
+      <div className="container max-w-6xl mx-auto px-4 relative z-10 font-snd">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
             هل أنت مستعد لتأخذ خطوتك الاستثمارية التالية؟
           </h2>
           <p className="text-xl md:text-2xl mb-10 text-gray-100 leading-relaxed">

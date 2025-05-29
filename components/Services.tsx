@@ -48,7 +48,7 @@ const Services = () => {
 
   return (
     <section className="md:py-14 bg-gray-50">
-      <div className="container max-w-7xl mx-auto px-4">
+      <div className="container max-w-7xl mx-auto px-4 font-snd">
         <div className="text-center mb-16">
           <div className="inline-block bg-gray-100 text-[#9e1915] px-4 py-2 rounded-full text-sm font-medium mb-4">
             خدماتنا

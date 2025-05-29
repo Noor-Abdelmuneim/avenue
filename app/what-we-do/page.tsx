@@ -34,7 +34,7 @@ export default function WhatWeDoPage() {
       <div className="h-1 md:h-5"></div>
 
       {/* Breadcrumb */}
-      <div className="bg-gray-50 py-4">
+      <div className="font-snd bg-gray-50 py-4">
         <div className="container mx-auto px-4">
           <nav className="flex items-center gap-2 text-2xl">
             <Link
@@ -50,7 +50,7 @@ export default function WhatWeDoPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] bg-gradient-to-r from-[#9e1915] to-[#2d5a87] overflow-hidden">
+      <section className="font-snd relative h-[60vh] bg-gradient-to-r from-[#9e1915] to-[#2d5a87] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="https://i.pinimg.com/736x/6a/5f/94/6a5f9423f4d61bbf677e7d057c50713f.jpg"
@@ -75,7 +75,7 @@ export default function WhatWeDoPage() {
 
       {/* Services Overview */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="font-snd container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="text-gray-600 font-semibold mb-4 text-lg">
               خدماتنا
@@ -274,7 +274,7 @@ export default function WhatWeDoPage() {
 
       {/* Process Section */}
       <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="font-snd container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="text-gray-600 font-semibold mb-4 text-lg">
               منهجيتنا
@@ -363,7 +363,7 @@ export default function WhatWeDoPage() {
 
       {/* Featured Projects */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="font-snd container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="text-gray-600 font-semibold mb-4 text-lg">
               مشاريعنا المميزة
@@ -529,8 +529,8 @@ export default function WhatWeDoPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#9e1915] via-gray-600 to-[#9e1915] text-white">
-        <div className="absolute inset-0 opacity-10">
+      <section className="font-snd py-20 bg-gradient-to-r from-[#9e1915] via-gray-600 to-[#9e1915] text-white">
+        <div className="font-snd absolute inset-0 opacity-10">
           <Image
             src="/placeholder.svg?height=600&width=1600"
             alt="Background"
@@ -539,7 +539,7 @@ export default function WhatWeDoPage() {
           />
         </div>
         <div className="relative container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             هل لديك مشروع في ذهنك؟
           </h2>
           <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
