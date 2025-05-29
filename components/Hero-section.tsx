@@ -89,18 +89,24 @@ const HeroSection = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Link href={slide.pageLink} passHref>
-                  <Button className="bg-[#9e1915] hover:bg-[#e0423d] text-white px-5 sm:px-8 py-3 sm:py-4 rounded-full shadow-md hover:shadow-lg transition-all text-sm sm:text-base">
-                    {slide.buttonText}
-                    <ArrowLeft className="w-4 h-4 ml-2" />
+                  <Button className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#9e1915] px-6 sm:px-8 py-3 sm:py-4 text-white transition-all duration-300 ease-in-out hover:bg-[#e0423d] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9e1915]">
+                    <span className="relative z-10 flex items-center">
+                      {slide.buttonText}
+                      <ArrowLeft className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:-translate-x-1" />
+                    </span>
+                    <span className="absolute inset-0 w-full h-full bg-white opacity-0 transition-all duration-300 group-hover:opacity-10" />
                   </Button>
                 </Link>
                 <Button
                   variant="outline"
-                  className="hidden md:block border-2 border-white text-white hover:bg-white hover:text-gray-900 px-5 sm:px-8 py-3 sm:py-4 rounded-full backdrop-blur-sm bg-white/10 text-sm sm:text-base"
+                  className="hidden lg:inline-flex group relative items-center justify-center overflow-hidden rounded-full border-2 border-white bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-white backdrop-blur-sm transition-all duration-300 ease-in-out hover:bg-white hover:text-[#9e1915] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
                   onClick={() => openVideo(slide.videoLink)}
                 >
-                  <Play className="w-4 h-4 mr-2" />
-                  {slide.videoText}
+                  <span className="relative z-10 flex items-center">
+                    <Play className="w-4 h-4 mr-2 transition-transform duration-300 group-hover:translate-x-1" />
+                    {slide.videoText}
+                  </span>
+                  <span className="absolute inset-0 w-full h-full bg-white opacity-0 transition-all duration-300 group-hover:opacity-10" />
                 </Button>
               </div>
             </div>
@@ -108,32 +114,31 @@ const HeroSection = () => {
         </div>
       ))}
 
-      {/* أزرار التحكم */}
       <Button
         variant="ghost"
         size="icon"
-        className="hidden md:block absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 text-white hover:bg-white/20 backdrop-blur-sm bg-black/20 rounded-full w-10 h-10 sm:w-12 sm:h-12"
+        className="hidden md:flex items-center justify-center absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 text-white bg-black/30 hover:bg-white/20 backdrop-blur-md rounded-full w-12 h-12 sm:w-14 sm:h-14 shadow-lg transition-all duration-300 ease-in-out"
         onClick={prevSlide}
         aria-label="السابق"
       >
-        <ChevronLeft className="w-5 h-5" />
+        <ChevronLeft className="w-6 h-6 transition-transform duration-300 hover:-translate-x-1" />
       </Button>
+
       <Button
         variant="ghost"
         size="icon"
-        className="hidden md:block absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 text-white hover:bg-white/20 backdrop-blur-sm bg-black/20 rounded-full w-10 h-10 sm:w-12 sm:h-12"
+        className="hidden md:flex items-center justify-center absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 text-white bg-black/30 hover:bg-white/20 backdrop-blur-md rounded-full w-12 h-12 sm:w-14 sm:h-14 shadow-lg transition-all duration-300 ease-in-out"
         onClick={nextSlide}
         aria-label="التالي"
       >
-        <ChevronRight className="w-5 h-5" />
+        <ChevronRight className="w-6 h-6 transition-transform duration-300 hover:translate-x-1" />
       </Button>
 
-      {/* نافذة الفيديو */}
       {isVideoOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
           <div className="relative w-full max-w-lg sm:max-w-3xl bg-black rounded-lg p-4">
             <button
-              className="absolute top-2 right-2 text-white"
+              className="absolute top-2 right-2 text-white hover:text-red-500 transition-colors duration-300"
               onClick={() => setIsVideoOpen(false)}
             >
               <X className="w-6 h-6" />
