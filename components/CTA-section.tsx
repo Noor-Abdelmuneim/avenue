@@ -6,9 +6,6 @@ import { Phone, Mail, MapPin, ArrowLeft } from "lucide-react";
 const CTA = () => {
   return (
     <section className="py-20 bg-gradient-to-r from-gray-900 via-[#9e1915] to-slate-900 text-white relative overflow-hidden">
-      {/* خلفية شفافة */}
-      <div className="absolute inset-0 bg-[url('/images/cta-bg.jpg')] bg-cover bg-center opacity-10"></div>
-
       <div className="container max-w-6xl mx-auto px-4 relative z-10 font-snd">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
@@ -19,7 +16,6 @@ const CTA = () => {
             العقارية والاستثمارية من خلال حلول مبتكرة وخبرة راسخة.
           </p>
 
-          {/* الأزرار */}
 
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <a href="/contact">
@@ -42,7 +38,6 @@ const CTA = () => {
             </a>
           </div>
 
-          {/* معلومات التواصل */}
           <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
             <div>
               <Phone className="w-8 h-8 mx-auto mb-2 text-gray-300" />

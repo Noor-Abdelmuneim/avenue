@@ -1,6 +1,6 @@
 "use client";
 
-import type React from "react";
+import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -248,7 +248,8 @@ export default function ProjectDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;  // فك params باستخدام React.use()
+  const resolvedParams = React.use(params);
+  const { slug } = resolvedParams;
   const project = getProjectData(slug);
   const [activeGalleryImage, setActiveGalleryImage] = useState(0);
   const [formData, setFormData] = useState({

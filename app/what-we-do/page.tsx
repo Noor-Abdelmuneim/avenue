@@ -530,14 +530,6 @@ export default function WhatWeDoPage() {
 
       {/* CTA Section */}
       <section className="font-snd py-20 bg-gradient-to-r from-[#9e1915] via-gray-600 to-[#9e1915] text-white">
-        <div className="font-snd absolute inset-0 opacity-10">
-          <Image
-            src="/placeholder.svg?height=600&width=1600"
-            alt="Background"
-            fill
-            className="object-cover"
-          />
-        </div>
         <div className="relative container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             هل لديك مشروع في ذهنك؟
