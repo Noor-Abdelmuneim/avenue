@@ -127,14 +127,6 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-
-                <Button
-                  variant="ghost"
-                  className="p-0 h-auto text-[#9e1915] hover:text-[#9e1915] font-semibold"
-                >
-                  عرض تفاصيل المشروع
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                </Button>
               </CardContent>
             </Card>
           ))}

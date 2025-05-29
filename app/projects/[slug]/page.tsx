@@ -34,7 +34,7 @@ const getProjectData = (slug: string) => {
       title: "بلوم جاردنز",
       type: "سكني",
       location: "دبي لاند",
-      mainImage: "/placeholder.svg?height=800&width=1600",
+      mainImage: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "متاح الآن",
       statusColor: "bg-green-500",
       priceFrom: "850,000",
@@ -76,31 +76,31 @@ const getProjectData = (slug: string) => {
         { name: "نادي اجتماعي", icon: Users },
       ],
       gallery: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       ],
       floorPlans: [
         {
           name: "شقة بغرفة نوم واحدة",
-          image: "/placeholder.svg?height=800&width=1200",
+          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "120",
           bedrooms: "1",
           bathrooms: "2",
         },
         {
           name: "شقة بغرفتي نوم",
-          image: "/placeholder.svg?height=800&width=1200",
+          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "180",
           bedrooms: "2",
           bathrooms: "3",
         },
         {
           name: "شقة بثلاث غرف نوم",
-          image: "/placeholder.svg?height=800&width=1200",
+          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "250",
           bedrooms: "3",
           bathrooms: "4",
@@ -108,7 +108,7 @@ const getProjectData = (slug: string) => {
       ],
       locationData: {
         address: "دبي لاند، دبي، الإمارات العربية المتحدة",
-        mapImage: "/placeholder.svg?height=600&width=800",
+        mapImage: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
         nearbyPlaces: [
           { name: "مطار دبي الدولي", distance: "25 دقيقة" },
           { name: "داون تاون دبي", distance: "20 دقيقة" },
@@ -121,14 +121,14 @@ const getProjectData = (slug: string) => {
           id: 2,
           slug: "bloom-heights",
           title: "بلوم هايتس",
-          image: "/placeholder.svg?height=400&width=600",
+          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           location: "وسط دبي",
         },
         {
           id: 3,
           slug: "bloom-marina",
           title: "بلوم مارينا",
-          image: "/placeholder.svg?height=400&width=600",
+          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           location: "دبي مارينا",
         },
       ],
@@ -139,7 +139,7 @@ const getProjectData = (slug: string) => {
       title: "بلوم هايتس",
       type: "سكني",
       location: "وسط دبي",
-      mainImage: "/placeholder.svg?height=800&width=1600",
+      mainImage: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "قريباً",
       statusColor: "bg-orange-500",
       priceFrom: "1,200,000",
@@ -181,31 +181,31 @@ const getProjectData = (slug: string) => {
         { name: "نادي اجتماعي", icon: Users },
       ],
       gallery: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       ],
       floorPlans: [
         {
           name: "شقة بغرفتي نوم",
-          image: "/placeholder.svg?height=800&width=1200",
+          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "150",
           bedrooms: "2",
           bathrooms: "2",
         },
         {
           name: "شقة بثلاث غرف نوم",
-          image: "/placeholder.svg?height=800&width=1200",
+          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "220",
           bedrooms: "3",
           bathrooms: "3",
         },
         {
           name: "شقة بأربع غرف نوم",
-          image: "/placeholder.svg?height=800&width=1200",
+          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "350",
           bedrooms: "4",
           bathrooms: "5",
@@ -213,7 +213,7 @@ const getProjectData = (slug: string) => {
       ],
       locationData: {
         address: "وسط دبي، دبي، الإمارات العربية المتحدة",
-        mapImage: "/placeholder.svg?height=600&width=800",
+        mapImage: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
         nearbyPlaces: [
           { name: "برج خليفة", distance: "5 دقائق" },
           { name: "دبي مول", distance: "7 دقائق" },
@@ -226,14 +226,14 @@ const getProjectData = (slug: string) => {
           id: 1,
           slug: "bloom-gardens",
           title: "بلوم جاردنز",
-          image: "/placeholder.svg?height=400&width=600",
+          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           location: "دبي لاند",
         },
         {
           id: 3,
           slug: "bloom-marina",
           title: "بلوم مارينا",
-          image: "/placeholder.svg?height=400&width=600",
+          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           location: "دبي مارينا",
         },
       ],
@@ -327,7 +327,7 @@ export default function ProjectDetailPage({
       </div>
 
       {/* Hero Section */}
-      <section className="font-snd relative h-[70vh] bg-gradient-to-r from-[#1a365d] to-[#2d5a87] overflow-hidden">
+      <section className="font-snd relative h-[80vh] bg-gradient-to-r from-[#1a365d] to-[#2d5a87] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={project.mainImage || "/placeholder.svg"}
@@ -356,12 +356,6 @@ export default function ProjectDetailPage({
               {project.description}
             </p>
             <div className="flex flex-wrap gap-6">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                <div className="text-sm opacity-80">السعر يبدأ من</div>
-                <div className="text-2xl font-bold">
-                  {project.priceFrom} درهم
-                </div>
-              </div>
               {project.bedrooms && (
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
                   <div className="text-sm opacity-80">غرف النوم</div>
@@ -387,7 +381,7 @@ export default function ProjectDetailPage({
 
       <main className="bg-white">
         {/* Project Overview */}
-        <section className="py-20">
+        <section className="py-16">
           <div className="font-snd container mx-auto px-4">
             <div className="grid lg:grid-cols-3 gap-16">
               <div className="lg:col-span-3 mx-auto">
@@ -430,7 +424,7 @@ export default function ProjectDetailPage({
         </section>
 
         {/* Amenities */}
-        <section className="py-20 bg-gray-50">
+        <section className="bg-gray-50">
           <div className="font-snd container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6">
@@ -576,41 +570,6 @@ export default function ProjectDetailPage({
                   </div>
                 </Card>
               </div>
-            </div>
-          </div>
-        </section>
-
-
-        {/* CTA Section */}
-        <section className="font-snd py-20 bg-gradient-to-r from-[#1a365d] via-[#2d5a87] to-[#1a365d] text-white relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <Image
-              src="/placeholder.svg?height=600&width=1600"
-              alt="Background"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="relative container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              مهتم بـ {project.title}؟
-            </h2>
-            <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
-              تواصل مع فريقنا المتخصص للحصول على المزيد من المعلومات أو لحجز
-              موعد لزيارة المشروع
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button className="bg-[#e53e3e] hover:bg-[#c53030] text-white px-10 py-4 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-                احجز موعد للزيارة
-                <Calendar className="w-5 h-5 mr-2" />
-              </Button>
-              <Button
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-[#1a365d] px-10 py-4 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
-              >
-                تحميل الكتيب
-                <ArrowRight className="w-5 h-5 mr-2 rotate-180" />
-              </Button>
             </div>
           </div>
         </section>

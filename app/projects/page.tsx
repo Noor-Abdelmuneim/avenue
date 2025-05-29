@@ -200,7 +200,7 @@ export default function ProjectsPage() {
             </h1>
             <p className="text-xl md:text-2xl leading-relaxed opacity-90">
               اكتشف مجموعة متنوعة من المشاريع السكنية والتجارية الفاخرة في أفضل
-              مواقع دبي
+              مواقع العراق
             </p>
           </div>
         </div>
