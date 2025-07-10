@@ -11,7 +11,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        snd: ['"GE SND Book"', "sans-serif"],
+        burdaBold: ['BurdaExtraBold', 'sans-serif'],
+        burdaLight: ['BurdaExtraLight', 'sans-serif'],
+        burdaMedium: ['BurdaMedium', 'sans-serif'],
       },
       colors: {
         background: "hsl(var(--background))",

@@ -35,8 +35,7 @@ export default function ProjectsPage() {
       title: "بلوم جاردنز",
       type: "سكني",
       location: "دبي لاند",
-      image:
-        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+      image: "/Bloom/1.jpg",
       status: "متاح الآن",
       statusColor: "bg-green-500",
       priceFrom: "850,000",
@@ -176,7 +175,7 @@ export default function ProjectsPage() {
               الرئيسية
             </Link>
             <ChevronRight className="w-4 h-4 text-gray-400 rotate-180" />
-            <span className="text-[#9e1915] font-medium">مشاريعنا</span>
+            <span className="text-[#9e1915] font-burdaMedium">مشاريعنا</span>
           </nav>
         </div>
       </div>
@@ -195,10 +194,10 @@ export default function ProjectsPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a365d]/80 to-transparent" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-burdaBold mb-6 leading-tight">
               مشاريعنا
             </h1>
-            <p className="text-xl md:text-2xl leading-relaxed opacity-90">
+            <p className="text-xl md:text-2xl font-burdaLight leading-relaxed opacity-90">
               اكتشف مجموعة متنوعة من المشاريع السكنية والتجارية الفاخرة في أفضل
               مواقع العراق
             </p>
@@ -211,7 +210,7 @@ export default function ProjectsPage() {
         <section className="py-16">
           <div className="font-snd container mx-auto px-4">
             <div className="mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4">
+              <h2 className="text-3xl md:text-4xl font-burdaBold text-[#1a365d] mb-4">
                 المشاريع المميزة
               </h2>
               <div className="w-20 h-1 bg-[#e53e3e]"></div>
@@ -237,7 +236,7 @@ export default function ProjectsPage() {
                       {project.status}
                     </Badge>
                     <div className="absolute bottom-6 left-6 right-6 text-white">
-                      <h3 className="text-2xl font-bold mb-2 leading-tight">
+                      <h3 className="text-2xl font-burdaBold mb-2 leading-tight">
                         {project.title}
                       </h3>
                       <div className="flex items-center gap-2 mb-3">
@@ -246,7 +245,7 @@ export default function ProjectsPage() {
                           {project.location}
                         </span>
                       </div>
-                      <p className="text-white/90 mb-4 leading-relaxed">
+                      <p className="text-white/90 font-burdaLight mb-4 leading-relaxed text-xl md:text-2xl">
                         {project.description}
                       </p>
                       <div className="flex items-center justify-between">
@@ -286,7 +285,7 @@ export default function ProjectsPage() {
         <section className="py-16 bg-gray-50">
           <div className="font-snd container mx-auto px-4">
             <div className="mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4">
+              <h2 className="text-3xl md:text-4xl font-burdaBold text-[#1a365d] mb-4">
                 جميع المشاريع
               </h2>
               <div className="w-20 h-1 bg-[#e53e3e]"></div>
@@ -312,7 +311,7 @@ export default function ProjectsPage() {
                       {project.status}
                     </Badge>
                     <div className="absolute bottom-4 left-4 right-4 text-white">
-                      <h3 className="text-xl font-bold mb-1">
+                      <h3 className="text-xl font-burdaBold mb-1">
                         {project.title}
                       </h3>
                       <div className="flex items-center gap-1 text-sm opacity-90">
@@ -334,7 +333,7 @@ export default function ProjectsPage() {
                         <span>{project.type}</span>
                       </div>
                     </div>
-                    <p className="text-gray-600 mb-6 leading-relaxed text-sm line-clamp-2">
+                    <p className="text-gray-600 font-burdaLight mb-6 leading-relaxed line-clamp-2 text-xl md:text-2xl">
                       {project.description}
                     </p>
                     <div className="flex justify-between items-center">
@@ -355,23 +354,23 @@ export default function ProjectsPage() {
         <section className="py-20 bg-gradient-to-r from-[#9e1915] via-gray-600 to-[#9e1915] text-white">
           <div className="font-snd absolute inset-0 opacity-10"></div>
           <div className="relative container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-burdaBold mb-6">
               هل تبحث عن منزل أحلامك؟
             </h2>
-            <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
+            <p className="text-xl md:text-2xl font-burdaLight mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
               فريقنا من الخبراء جاهز لمساعدتك في العثور على المشروع المثالي الذي
               يلبي احتياجاتك وتطلعاتك
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a href="/contact">
-                <Button className="bg-[#e53e3e] hover:bg-[#c53030] text-white px-10 py-4 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <Button className="bg-[#e53e3e] hover:bg-[#c53030] text-white px-10 py-4 text-lg font-burdaMedium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
                   تواصل مع مستشار عقاري
                 </Button>
               </a>
               <a href="/contact">
                 <Button
                   variant="outline"
-                  className="border-2 border-white text-white hover:bg-white hover:text-[#1a365d] px-10 py-4 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
+                  className="border-2 border-white text-white hover:bg-white hover:text-[#1a365d] px-10 py-4 text-lg font-burdaMedium rounded-lg transition-all duration-300 transform hover:scale-105"
                 >
                   حجز موعد لزيارة المشاريع
                   <Calendar className="w-5 h-5 mr-2" />

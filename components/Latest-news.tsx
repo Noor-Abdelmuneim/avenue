@@ -58,13 +58,13 @@ const LatestNews = () => {
       <section className="py-14">
         <div className="container mx-auto px-4 font-snd">
           <div className="text-center mb-16">
-            <div className="inline-block bg-gray-100 text-[#9e1915] px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-block bg-gray-100 text-[#9e1915] px-4 py-2 rounded-full text-lg font-burdaMedium mb-6">
               الأخبار والفعاليات
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-burdaBold mb-6 text-gray-900">
               آخر الأخبار والتطورات
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-2xl text-gray-600 font-burdaLight max-w-3xl mx-auto leading-relaxed">
               تابع آخر أخبارنا وفعالياتنا وإنجازاتنا لتبقى على اطلاع دائم بأحدث
               تطوراتنا ومشاريعنا الجديدة
             </p>
@@ -85,7 +85,7 @@ const LatestNews = () => {
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute top-4 right-4">
-                    <div className="bg-[#9e1915] text-white px-3 py-1 rounded-full text-xs font-medium">
+                    <div className="bg-[#9e1915] text-white px-3 py-1 rounded-full text-xs font-burdaMedium">
                       {article.category}
                     </div>
                   </div>
@@ -101,10 +101,10 @@ const LatestNews = () => {
                       <span>{article.views}</span>
                     </div>
                   </div>
-                  <h3 className="text-lg font-bold mb-3 text-gray-900 line-clamp-2 leading-tight">
+                  <h3 className="text-lg font-burdaBold mb-3 text-gray-900 line-clamp-2 leading-tight">
                     {article.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed text-sm line-clamp-3">
+                  <p className="text-gray-600 mb-4 font-burdaLight leading-relaxed text-lg md:text-2xl line-clamp-3">
                     {article.excerpt}
                   </p>
                   <div className="flex items-center justify-between">

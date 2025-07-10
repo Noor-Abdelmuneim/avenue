@@ -34,7 +34,7 @@ export default function AboutPage() {
               الرئيسية
             </Link>
             <ChevronRight className="w-4 h-4 text-gray-400 rotate-180" />
-            <span className="text-[#9e1915] font-medium">من نحن</span>
+            <span className="text-[#9e1915] font-burdaMedium">من نحن</span>
           </nav>
         </div>
       </div>
@@ -50,8 +50,10 @@ export default function AboutPage() {
         <div className="font-snd absolute inset-0 bg-gradient-to-r from-[#9e1915]/80 to-transparent " />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">من نحن</h1>
-            <p className="text-xl md:text-2xl leading-relaxed">
+            <h1 className="text-5xl md:text-6xl font-burdaBold mb-6">من نحن</h1>
+            <p
+              className="text-xl md:text-3xl font-burdaLight leading-relaxed"
+            >
               خبرة عراقية رائدة في الاستثمار والتطوير العقاري منذ عام 2019
             </p>
           </div>
@@ -66,28 +68,28 @@ export default function AboutPage() {
               <div className="text-[#e53e3e] font-semibold mb-4 text-lg">
                 قصتنا
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#9e1915] mb-6">
+              <h2 className="text-4xl md:text-5xl font-burdaBold text-[#9e1915] mb-6">
                 من العراق إلى المستقبل
               </h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-700 font-burdaLight mb-6 leading-relaxed">
                 تأسست شركة أفينيو للاستثمار والتطوير العقاري في عام 2019، ومنذ
                 انطلاقتها حققت الشركة نموًا ملحوظًا في سوق العقارات العراقي من
                 خلال تقديم خدمات استشارية متكاملة ومشاريع تطوير عقاري نوعية.
               </p>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-700 font-burdaLight mb-8 leading-relaxed">
                 نحن نؤمن أن نجاحنا ينبع من فهمنا العميق للسوق المحلي، ورغبتنا
                 الصادقة في تحسين جودة الحياة، وبناء مجتمعات متكاملة آمنة
                 ومستدامة.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#e53e3e] mb-2">
+                  <div className="text-3xl font-burdaBold text-[#e53e3e] mb-2">
                     2019
                   </div>
                   <div className="text-gray-600">سنة التأسيس</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#e53e3e] mb-2">
+                  <div className="text-3xl font-burdaBold text-[#e53e3e] mb-2">
                     +10
                   </div>
                   <div className="text-gray-600">مشاريع ناجحة</div>
@@ -103,7 +105,7 @@ export default function AboutPage() {
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -right-6 bg-[#9e1915] text-white p-6 rounded-xl shadow-lg">
-                <div className="text-3xl font-bold">ثقة وشراكة</div>
+                <div className="text-3xl font-burdaBold">ثقة وشراكة</div>
                 <div className="text-sm">بخبرات محلية ورؤية عالمية</div>
               </div>
             </div>
@@ -118,10 +120,10 @@ export default function AboutPage() {
             <div className="text-[#e53e3e] font-semibold mb-4 text-lg">
               رؤيتنا ورسالتنا
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#9e1915] mb-6">
+            <h2 className="text-4xl md:text-5xl font-burdaBold text-[#9e1915] mb-6">
               أسسنا الاستراتيجية
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-600 font-burdaLight max-w-3xl mx-auto">
               نلتزم بتقديم مشاريع نوعية واستشارات مهنية تنسجم مع أهداف عملائنا
               وتخدم التنمية المستدامة
             </p>
@@ -132,10 +134,10 @@ export default function AboutPage() {
                 <div className="w-16 h-16 bg-[#9e1915] rounded-2xl flex items-center justify-center mb-6">
                   <Eye className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-2xl font-burdaBold text-[#9e1915] mb-4">
                   رؤيتنا
                 </h3>
-                <p className="text-gray-700 leading-relaxed text-lg">
+                <p className="text-gray-700 font-burdaLight leading-relaxed text-xl md:text-2xl">
                   أن نكون المطور العقاري الأكثر ثقة في العراق والمنطقة، من خلال
                   توفير حلول عمرانية مبتكرة، تساهم في تحسين جودة الحياة.
                 </p>
@@ -146,10 +148,10 @@ export default function AboutPage() {
                 <div className="w-16 h-16 bg-[#9e1915] rounded-2xl flex items-center justify-center mb-6">
                   <Target className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-2xl font-burdaBold text-[#9e1915] mb-4">
                   رسالتنا
                 </h3>
-                <p className="text-gray-700 leading-relaxed text-lg">
+                <p className="text-gray-700 font-burdaLight leading-relaxed text-xl md:text-2xl">
                   تقديم خدمات تطوير واستثمار عقاري شاملة وموثوقة، ترتكز على
                   الابتكار، الجودة، وتحقيق رضا العملاء وتعزيز التنمية الوطنية.
                 </p>
@@ -166,7 +168,7 @@ export default function AboutPage() {
             <div className="text-[#e53e3e] font-semibold mb-4 text-lg">
               قيمنا
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#9e1915] mb-6">
+            <h2 className="text-4xl md:text-5xl font-burdaBold text-[#9e1915] mb-6">
               الركائز التي نؤمن بها
             </h2>
           </div>
@@ -201,10 +203,10 @@ export default function AboutPage() {
                   <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-[#9e1915] to-gray-800 rounded-2xl flex items-center justify-center text-white">
                     {item.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-[#9e1915] mb-2">
+                  <h3 className="text-xl font-burdaBold text-[#9e1915] mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600">{item.desc}</p>
+                  <p className="text-gray-600 font-burdaLight text-xl md:text-2xl">{item.desc}</p>
                 </CardContent>
               </Card>
             ))}
@@ -218,10 +220,10 @@ export default function AboutPage() {
             <div className="text-[#e53e3e] font-semibold mb-4 text-lg">
               فريق القيادة
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#9e1915] mb-6">
+            <h2 className="text-4xl md:text-5xl font-burdaBold text-[#9e1915] mb-6">
               قادة الرؤية
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl font-burdaLight text-gray-600 max-w-3xl mx-auto">
               يقودنا فريق يتمتع بخبرة واسعة ورؤية مستقبلية لبناء بيئة استثمارية
               رائدة في العراق والمنطقة
             </p>
@@ -240,13 +242,13 @@ export default function AboutPage() {
                     className="rounded-full mx-auto object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-[#9e1915] mb-2">
+                {/* <h3 className="text-xl font-burdaBold text-[#9e1915] mb-2">
                   أ. أحمد عبد الرزاق
-                </h3>
-                <p className="text-[#e53e3e] font-medium mb-4">
+                </h3> */}
+                <p className="text-[#e53e3e] font-burdaMedium mb-4 text-xl md:text-2xl">
                   رئيس مجلس الإدارة
                 </p>
-                <p className="text-gray-600 text-sm leading-7">
+                <p className="text-gray-600 font-burdaLight text-xl md:text-2xl leading-7">
                   نحن نؤمن بقوة بأن النجاح لا يقاس فقط بالأرقام والإنجازات,هذا
                   ما قاله رئيس مجلس الإدارة" بل أيضا بتأثيرنا الإيجابي على
                   مجتمعنا نحن ملتزمون بخلق قيمة مضافة لمجتمعنا من خلال مبادرات
@@ -267,13 +269,13 @@ export default function AboutPage() {
                     className="rounded-full mx-auto object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-[#9e1915] mb-2">
+                {/* <h3 className="text-xl font-burdaBold text-[#9e1915] mb-2">
                   د. سارة محمد كريم
-                </h3>
-                <p className="text-[#e53e3e] font-medium mb-4">
+                </h3> */}
+                <p className="text-[#e53e3e] font-burdaMedium mb-4 text-xl md:text-2xl">
                   نائب رئيس مجلس الإدارة
                 </p>
-                <p className="text-gray-600 text-sm leading-7">
+                <p className="text-gray-600 font-burdaLight text-xl md:text-2xl leading-7">
                   نعمل بجد لدعم المشاريع والمبادرات التي تساهم في تحسين جودة
                   الحياة سواء عبر المساهمة في التعليم وتطوير المهارات او من خلال
                   المشاركة في برامج بيئية تهدف الى الحفاظ على الموارد الطبيعية
@@ -294,10 +296,10 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-[#9e1915] via-[#2d5a87] to-[#9e1915] text-white">
         <div className="font-snd container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-burdaBold mb-6">
             كن جزءًا من التغيير
           </h2>
-          <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl font-burdaLight mb-10 max-w-3xl mx-auto">
             تواصل معنا اليوم وابدأ شراكتك الاستثمارية مع شركة أفينيو
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">

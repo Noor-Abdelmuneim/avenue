@@ -50,13 +50,13 @@ const Services = () => {
     <section className="md:py-14 bg-gray-50">
       <div className="container max-w-7xl mx-auto px-4 font-snd">
         <div className="text-center mb-16">
-          <div className="inline-block bg-gray-100 text-[#9e1915] px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="inline-block bg-gray-100 text-[#9e1915] px-4 py-2 rounded-full text-lg font-burdaMedium mb-4">
             خدماتنا
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-burdaBold text-gray-900 mb-4">
             حلول عقارية واستثمارية متكاملة
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-2xl text-gray-600 font-burdaLight max-w-3xl mx-auto leading-relaxed">
             نقدم مجموعة من الخدمات التي تغطي مختلف مراحل الاستثمار والتطوير
             العقاري، بتوجيه من فريق محترف وخبرة تمتد لسنوات في السوق العراقي.
           </p>
@@ -80,10 +80,10 @@ const Services = () => {
               </div>
 
               <CardContent className="p-6 sm:p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                <h3 className="text-2xl font-burdaBold text-gray-900 mb-3">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
+                <p className="text-gray-600 mb-4 font-burdaLight text-lg md:text-2xl">{service.description}</p>
 
                 <div className="mb-4">
                   <h4 className="font-semibold text-gray-900 mb-2 text-sm">

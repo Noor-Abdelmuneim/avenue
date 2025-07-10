@@ -149,7 +149,7 @@ export default function NewsPage() {
               الرئيسية
             </Link>
             <ChevronRight className="w-4 h-4 text-gray-400 rotate-180" />
-            <span className="text-[#9e1915] font-medium">الأخبار</span>
+            <span className="text-[#9e1915] font-burdaMedium">الأخبار</span>
           </nav>
         </div>
       </div>
@@ -168,10 +168,10 @@ export default function NewsPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#9e1915]/80 to-transparent" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-burdaBold mb-6 leading-tight">
               الأخبار
             </h1>
-            <p className="text-xl md:text-2xl leading-relaxed opacity-90">
+            <p className="text-xl md:text-2xl font-burdaLight leading-relaxed opacity-90">
               آخر الأخبار والتطورات من عالم بلوم هولدنغ
             </p>
           </div>
@@ -183,7 +183,7 @@ export default function NewsPage() {
         <section className="font-snd py-16">
           <div className="container mx-auto px-4">
             <div className="mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#9e1915] mb-4">
+              <h2 className="text-3xl md:text-4xl font-burdaBold text-[#9e1915] mb-4">
                 الأخبار المميزة
               </h2>
               <div className="w-20 h-1 bg-[#9e1915]"></div>
@@ -207,10 +207,10 @@ export default function NewsPage() {
                       {news.category}
                     </Badge>
                     <div className="absolute bottom-6 left-6 right-6 text-white">
-                      <h3 className="text-2xl font-bold mb-3 leading-tight">
+                      <h3 className="text-2xl font-burdaBold mb-3 leading-tight">
                         {news.title}
                       </h3>
-                      <p className="text-white/90 mb-4 leading-relaxed">
+                      <p className="text-white/90 mb-4 font-burdaLight leading-relaxed text-xl md:text-2xl">
                         {news.excerpt}
                       </p>
                       <div className="flex items-center justify-between text-sm">
@@ -240,7 +240,7 @@ export default function NewsPage() {
         <section className="font-snd py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#9e1915] mb-4">
+              <h2 className="text-3xl md:text-4xl font-burdaBold text-[#9e1915] mb-4">
                 آخر الأخبار
               </h2>
               <div className="w-20 h-1 bg-[#9e1915]"></div>
@@ -265,10 +265,10 @@ export default function NewsPage() {
                     </Badge>
                   </div>
                   <CardContent className="p-6">
-                    <h3 className="text-lg font-bold text-[#9e1915] mb-3 leading-tight group-hover:text-[#9e1915] transition-colors">
+                    <h3 className="text-lg font-burdaBold text-[#9e1915] mb-3 leading-tight group-hover:text-[#9e1915] transition-colors">
                       {news.title}
                     </h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                    <p className="text-gray-600 mb-4 font-burdaLight leading-relaxed text-xl md:text-2xl">
                       {news.excerpt}
                     </p>
                     <div className="flex items-center justify-between text-xs text-gray-500 mb-4">
@@ -310,10 +310,10 @@ export default function NewsPage() {
         {/* Newsletter Subscription */}
         <section className="font-snd py-16 bg-gradient-to-r from-[#9e1915] to-[#2d5a87] text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-burdaBold mb-4">
               اشترك في نشرتنا الإخبارية
             </h2>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 opacity-90 font-burdaLight max-w-2xl mx-auto">
               احصل على آخر الأخبار والتحديثات من بلوم هولدنغ مباشرة في بريدك
               الإلكتروني
             </p>
@@ -338,7 +338,7 @@ export default function NewsPage() {
                   <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#2d5a87] rounded-xl flex items-center justify-center mx-auto mb-4">
                     <TrendingUp className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-3xl font-bold text-[#9e1915] mb-2">
+                  <div className="text-3xl font-burdaBold text-[#9e1915] mb-2">
                     150+
                   </div>
                   <div className="text-gray-600">خبر منشور</div>
@@ -350,7 +350,7 @@ export default function NewsPage() {
                   <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#c53030] rounded-xl flex items-center justify-center mx-auto mb-4">
                     <Building className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-3xl font-bold text-[#9e1915] mb-2">
+                  <div className="text-3xl font-burdaBold text-[#9e1915] mb-2">
                     25+
                   </div>
                   <div className="text-gray-600">مشروع مغطى</div>
@@ -362,7 +362,7 @@ export default function NewsPage() {
                   <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                     <Award className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-3xl font-bold text-[#9e1915] mb-2">
+                  <div className="text-3xl font-burdaBold text-[#9e1915] mb-2">
                     10+
                   </div>
                   <div className="text-gray-600">جائزة وتكريم</div>
@@ -374,7 +374,7 @@ export default function NewsPage() {
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                     <Users className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-3xl font-bold text-[#9e1915] mb-2">
+                  <div className="text-3xl font-burdaBold text-[#9e1915] mb-2">
                     50K+
                   </div>
                   <div className="text-gray-600">قارئ شهرياً</div>

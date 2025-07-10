@@ -44,7 +44,7 @@ export default function WhatWeDoPage() {
               الرئيسية
             </Link>
             <ChevronRight className="w-4 h-4 text-gray-400 rotate-180" />
-            <span className="text-[#9e1915] font-medium">ما نقوم به</span>
+            <span className="text-[#9e1915] font-burdaMedium">ما نقوم به</span>
           </nav>
         </div>
       </div>
@@ -62,10 +62,10 @@ export default function WhatWeDoPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#9e1915]/80 to-transparent" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-burdaBold mb-6 leading-tight">
               ما نقوم به
             </h1>
-            <p className="text-xl md:text-2xl leading-relaxed opacity-90">
+            <p className="text-xl md:text-2xl leading-relaxed opacity-90 font-burdaLight">
               نقدم حلولاً شاملة ومتكاملة في قطاعات التطوير العقاري والاستثمار
               والضيافة والتعليم
             </p>
@@ -80,10 +80,10 @@ export default function WhatWeDoPage() {
             <div className="text-gray-600 font-semibold mb-4 text-lg">
               خدماتنا
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#9e1915] mb-6">
+            <h2 className="text-4xl md:text-5xl font-burdaBold text-[#9e1915] mb-6">
               مجالات عملنا
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-burdaLight">
               نعمل في عدة قطاعات حيوية لنقدم حلولاً متكاملة تلبي احتياجات السوق
               المتنوعة
             </p>
@@ -96,10 +96,10 @@ export default function WhatWeDoPage() {
                 <div className="w-20 h-20 bg-gradient-to-br from-[#9e1915] to-gray-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Building className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-2xl font-burdaBold text-[#9e1915] mb-4">
                   التطوير العقاري
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 text-xl md:text-2xl leading-relaxed mb-6 font-burdaLight">
                   تطوير مشاريع سكنية وتجارية متكاملة تلبي أعلى معايير الجودة
                   والاستدامة في أفضل مواقع دبي
                 </p>
@@ -126,10 +126,10 @@ export default function WhatWeDoPage() {
                 <div className="w-20 h-20 bg-gradient-to-br from-gray-600 to-[#c53030] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <TrendingUp className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-2xl font-burdaBold text-[#9e1915] mb-4">
                   الاستثمار العقاري
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 text-xl md:text-2xl leading-relaxed mb-6 font-burdaLight">
                   فرص استثمارية متنوعة في القطاع العقاري مع عوائد مجزية ومخاطر
                   محسوبة
                 </p>
@@ -156,10 +156,10 @@ export default function WhatWeDoPage() {
                 <div className="w-20 h-20 bg-gradient-to-br from-gray-600 to-[#c53030]  rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Users className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-2xl font-burdaBold text-[#9e1915] mb-4">
                   إدارة الأصول
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 text-xl md:text-2xl leading-relaxed mb-6 font-burdaLight">
                   خدمات إدارة شاملة للأصول العقارية لضمان أقصى عائد وقيمة مضافة
                 </p>
                 <ul className="space-y-2 mb-6">
@@ -185,10 +185,10 @@ export default function WhatWeDoPage() {
                 <div className="w-20 h-20 bg-gradient-to-br from-gray-600 to-[#c53030]  rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Hotel className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-2xl font-burdaBold text-[#9e1915] mb-4">
                   الضيافة والفنادق
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 text-xl md:text-2xl leading-relaxed mb-6 font-burdaLight">
                   تطوير وإدارة مشاريع الضيافة الفاخرة التي تقدم تجارب استثنائية
                   للضيوف
                 </p>
@@ -215,10 +215,10 @@ export default function WhatWeDoPage() {
                 <div className="w-20 h-20 bg-gradient-to-br from-gray-600 to-[#c53030]  rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <GraduationCap className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-2xl font-burdaBold text-[#9e1915] mb-4">
                   التعليم
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 text-xl md:text-2xl leading-relaxed mb-6 font-burdaLight">
                   تطوير مؤسسات تعليمية عالمية المستوى تساهم في بناء أجيال
                   المستقبل
                 </p>
@@ -245,10 +245,10 @@ export default function WhatWeDoPage() {
                 <div className="w-20 h-20 bg-gradient-to-br from-[#9e1915] to-gray-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <ShoppingBag className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-2xl font-burdaBold text-[#9e1915] mb-4">
                   التجارة والتسوق
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 text-xl md:text-2xl leading-relaxed mb-6 font-burdaLight">
                   تطوير مراكز تجارية ومولات عصرية تلبي احتياجات المجتمع المحلي
                   والسياح
                 </p>
@@ -279,10 +279,10 @@ export default function WhatWeDoPage() {
             <div className="text-gray-600 font-semibold mb-4 text-lg">
               منهجيتنا
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#9e1915] mb-6">
+            <h2 className="text-4xl md:text-5xl font-burdaBold text-[#9e1915] mb-6">
               كيف نعمل
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 text-xl md:text-2xl max-w-3xl mx-auto font-burdaLight">
               نتبع منهجية علمية ومدروسة في جميع مشاريعنا لضمان تحقيق أفضل
               النتائج
             </p>
@@ -291,16 +291,16 @@ export default function WhatWeDoPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="text-center p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#2d5a87] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#2d5a87] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-burdaBold">
                   1
                 </div>
                 <div className="w-12 h-12 bg-gradient-to-br from-[#9e1915] to-[#2d5a87] rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Target className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-xl font-burdaBold text-[#9e1915] mb-4">
                   التخطيط والدراسة
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-xl md:text-2xl leading-relaxed font-burdaLight">
                   دراسة شاملة للسوق والموقع ووضع خطة استراتيجية مفصلة
                 </p>
               </CardContent>
@@ -308,16 +308,16 @@ export default function WhatWeDoPage() {
 
             <Card className="text-center p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#2d5a87] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#2d5a87] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-burdaBold">
                   2
                 </div>
                 <div className="w-12 h-12 bg-gradient-to-br from-gray-600 to-[#c53030] rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-xl font-burdaBold text-[#9e1915] mb-4">
                   التصميم والتطوير
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-xl md:text-2xl leading-relaxed font-burdaLight">
                   تصميم مبتكر يجمع بين الجمال والوظائف العملية والاستدامة
                 </p>
               </CardContent>
@@ -325,16 +325,16 @@ export default function WhatWeDoPage() {
 
             <Card className="text-center p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#2d5a87] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#2d5a87] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-burdaBold">
                   3
                 </div>
                 <div className="w-12 h-12 bg-gradient-to-br from-gray-600 to-[#c53030] rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Building className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-xl font-burdaBold text-[#9e1915] mb-4">
                   التنفيذ والبناء
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-xl md:text-2xl leading-relaxed font-burdaLight">
                   تنفيذ المشروع وفقاً لأعلى معايير الجودة والسلامة والمواعيد
                   المحددة
                 </p>
@@ -343,16 +343,16 @@ export default function WhatWeDoPage() {
 
             <Card className="text-center p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#2d5a87] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#9e1915] to-[#2d5a87] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-burdaBold">
                   4
                 </div>
                 <div className="w-12 h-12 bg-gradient-to-br from-gray-600 to-[#c53030] rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#9e1915] mb-4">
+                <h3 className="text-xl font-burdaBold text-[#9e1915] mb-4">
                   التسليم والمتابعة
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-xl md:text-2xl leading-relaxed font-burdaLight">
                   تسليم المشروع وتقديم خدمات ما بعد البيع والصيانة المستمرة
                 </p>
               </CardContent>
@@ -368,10 +368,10 @@ export default function WhatWeDoPage() {
             <div className="text-gray-600 font-semibold mb-4 text-lg">
               مشاريعنا المميزة
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#9e1915] mb-6">
+            <h2 className="text-4xl md:text-5xl font-burdaBold text-[#9e1915] mb-6">
               أعمالنا المتميزة
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-burdaLight">
               مجموعة من أبرز مشاريعنا التي تعكس التزامنا بالجودة والابتكار
             </p>
           </div>
@@ -390,8 +390,8 @@ export default function WhatWeDoPage() {
                   مكتمل
                 </Badge>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <h3 className="text-2xl font-bold mb-2">بلوم جاردنز</h3>
-                  <p className="text-sm opacity-90">
+                  <h3 className="text-2xl font-burdaBold mb-2">بلوم جاردنز</h3>
+                  <p className="text-xl md:text-2xl opacity-90 font-burdaLight">
                     مجتمع سكني متكامل - دبي لاند
                   </p>
                 </div>
@@ -407,7 +407,7 @@ export default function WhatWeDoPage() {
                     <span>دبي لاند</span>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-600 text-xl md:text-2xl mb-4 leading-relaxed font-burdaLight">
                   مجتمع سكني متكامل يضم فلل وشقق فاخرة مع مرافق ترفيهية شاملة
                 </p>
                 <div className="flex items-center gap-2 mb-4">
@@ -440,8 +440,8 @@ export default function WhatWeDoPage() {
                   تحت الإنشاء
                 </Badge>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <h3 className="text-2xl font-bold mb-2">بلوم هايتس</h3>
-                  <p className="text-sm opacity-90">
+                  <h3 className="text-2xl font-burdaBold mb-2">بلوم هايتس</h3>
+                  <p className="text-xl md:text-2xl opacity-90 font-burdaLight">
                     أبراج سكنية فاخرة - وسط دبي
                   </p>
                 </div>
@@ -457,7 +457,7 @@ export default function WhatWeDoPage() {
                     <span>وسط دبي</span>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-600 mb-4 text-xl md:text-2xl leading-relaxed font-burdaLight">
                   أبراج سكنية فاخرة مع إطلالات بانورامية على أفق دبي
                 </p>
                 <div className="flex items-center gap-2 mb-4">
@@ -488,8 +488,8 @@ export default function WhatWeDoPage() {
                   قريباً
                 </Badge>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <h3 className="text-2xl font-bold mb-2">بلوم مارينا</h3>
-                  <p className="text-sm opacity-90">واجهة بحرية - دبي مارينا</p>
+                  <h3 className="text-2xl font-burdaBold mb-2">بلوم مارينا</h3>
+                  <p className="opacity-90 font-burdaLight text-xl md:text-2xl">واجهة بحرية - دبي مارينا</p>
                 </div>
               </div>
               <CardContent className="p-6">
@@ -503,7 +503,7 @@ export default function WhatWeDoPage() {
                     <span>دبي مارينا</span>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-600 mb-4 leading-relaxed font-burdaLight text-xl md:text-2xl">
                   وحدات سكنية فاخرة على الواجهة البحرية مع مرافق حصرية
                 </p>
                 <div className="flex items-center gap-2 mb-4">
@@ -520,7 +520,7 @@ export default function WhatWeDoPage() {
           </div>
 
           <div className="text-center mt-12">
-            <Button className="bg-[#9e1915] hover:bg-[#2d5a87] text-white px-8 py-4 text-lg font-medium rounded-lg">
+            <Button className="bg-[#9e1915] hover:bg-[#2d5a87] text-white px-8 py-4 text-lg font-burdaMedium rounded-lg">
               عرض جميع المشاريع
               <ArrowRight className="w-5 h-5 mr-2 rotate-180" />
             </Button>
@@ -531,16 +531,16 @@ export default function WhatWeDoPage() {
       {/* CTA Section */}
       <section className="font-snd py-20 bg-gradient-to-r from-[#9e1915] via-gray-600 to-[#9e1915] text-white">
         <div className="relative container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-burdaBold mb-6">
             هل لديك مشروع في ذهنك؟
           </h2>
-          <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
+          <p className="text-xl md:text-2xl font-burdaLight mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
             دعنا نساعدك في تحويل رؤيتك إلى واقع من خلال خبرتنا الواسعة وفريقنا
             المتخصص
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Link href="/contact">
-              <Button className="bg-[#c53030] hover:bg-gray-600 text-white px-10 py-4 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <Button className="bg-[#c53030] hover:bg-gray-600 text-white px-10 py-4 text-lg font-burdaMedium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
                 ابدأ مشروعك معنا
                 <Briefcase className="w-5 h-5 mr-2" />
               </Button>
@@ -548,7 +548,7 @@ export default function WhatWeDoPage() {
             <a href="/AVENUE Real Estate.pdf" download>
               <Button
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-[#9e1915] px-10 py-4 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
+                className="border-2 border-white text-white hover:bg-white hover:text-[#9e1915] px-10 py-4 text-lg font-burdaMedium rounded-lg transition-all duration-300 transform hover:scale-105"
               >
                 تحميل البروشور
                 <ArrowRight className="w-5 h-5 mr-2 rotate-180" />

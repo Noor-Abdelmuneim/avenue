@@ -8,30 +8,36 @@ import { ChevronLeft, ChevronRight, Play, ArrowLeft, X } from "lucide-react";
 
 const heroSlides = [
   {
-    image: "https://i.pinimg.com/736x/bc/c0/94/bcc094e2867aff8bc64e76b057af9629.jpg",
+    image:
+      "https://i.pinimg.com/736x/bc/c0/94/bcc094e2867aff8bc64e76b057af9629.jpg",
     title: "مرحباً بكم في أفينيو للاستثمار والتطوير العقاري",
     subtitle: "رائدون في تقديم الاستشارات العقارية منذ 2019",
-    description: "نسعى جاهدين لتلبية متطلبات عملائنا من خلال تقديم المشورة المهنية لمساعدتهم على اتخاذ قرارات ناجحة في العقارات.",
+    description:
+      "نسعى جاهدين لتلبية متطلبات عملائنا من خلال تقديم المشورة المهنية لمساعدتهم على اتخاذ قرارات ناجحة في العقارات.",
     buttonText: "اكتشف المزيد",
     videoText: "شاهد الفيديو",
     pageLink: "/about",
     videoLink: "https://www.youtube.com/",
   },
   {
-    image: "https://i.pinimg.com/736x/28/01/83/280183b564e3c2c996dc0714153ee6ef.jpg",
+    image:
+      "https://i.pinimg.com/736x/28/01/83/280183b564e3c2c996dc0714153ee6ef.jpg",
     title: "رؤيتنا",
     subtitle: "نحو مجتمعات سكنية متميزة وتطوير مبتكر",
-    description: "نسعى لأن نكون المطور العقاري الأكثر ثقة، مع التركيز على الجودة العالية والموثوقية، وتجربة استثنائية في بناء المجتمعات.",
+    description:
+      "نسعى لأن نكون المطور العقاري الأكثر ثقة، مع التركيز على الجودة العالية والموثوقية، وتجربة استثنائية في بناء المجتمعات.",
     buttonText: "تعرف على رؤيتنا",
     videoText: "رؤية وأهداف",
     pageLink: "/about",
     videoLink: "https://www.youtube.com/",
   },
   {
-    image: "https://i.pinimg.com/736x/a5/56/e8/a556e8fc7c3146e625ebdb58d0fec548.jpg",
+    image:
+      "https://i.pinimg.com/736x/a5/56/e8/a556e8fc7c3146e625ebdb58d0fec548.jpg",
     title: "التزامنا نحو التنمية المستدامة",
     subtitle: "نحترم البيئة ونشجع الابتكار",
-    description: "من خلال تقنيات البناء الخضراء وتحسين كفاءة استهلاك الطاقة، نقدم حلولاً مبتكرة لمواكبة السوق العقاري.",
+    description:
+      "من خلال تقنيات البناء الخضراء وتحسين كفاءة استهلاك الطاقة، نقدم حلولاً مبتكرة لمواكبة السوق العقاري.",
     buttonText: "اعرف المزيد",
     videoText: "مشاريع مستدامة",
     pageLink: "/projects",
@@ -51,8 +57,12 @@ const HeroSection = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
+  const nextSlide = () =>
+    setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+  const prevSlide = () =>
+    setCurrentSlide(
+      (prev) => (prev - 1 + heroSlides.length) % heroSlides.length
+    );
   const openVideo = (link) => {
     setCurrentVideoLink(link);
     setIsVideoOpen(true);
@@ -64,7 +74,9 @@ const HeroSection = () => {
         <div
           key={idx}
           className={`absolute inset-0 transition-all duration-1000 ${
-            idx === currentSlide ? "opacity-100 scale-100" : "opacity-0 scale-105"
+            idx === currentSlide
+              ? "opacity-100 scale-100"
+              : "opacity-0 scale-105"
           }`}
         >
           <Image
@@ -78,13 +90,13 @@ const HeroSection = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
           <div className="absolute inset-0 flex items-center justify-center text-center px-4 sm:px-8">
             <div className="max-w-2xl sm:max-w-4xl">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-snug">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-burdaBold text-white mb-4 sm:mb-6 leading-snug">
                 {slide.title}
               </h1>
-              <h2 className="text-lg sm:text-xl md:text-2xl text-[#9e1915] font-medium mb-3">
+              <h2 className="text-xl md:text-2xl text-[#9e1915] font-burdaMedium mb-3">
                 {slide.subtitle}
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-200 mb-5 sm:mb-6 leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-200 font-burdaLight mb-5 sm:mb-6 leading-relaxed">
                 {slide.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">

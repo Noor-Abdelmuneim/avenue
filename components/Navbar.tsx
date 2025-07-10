@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-[#9e1915] text-white text-xs py-1.5 px-4 font-snd">
+      <div className="bg-[#9e1915] text-white text-md py-1.5 px-4 font-snd">
         <div className="container mx-auto flex justify-between items-center">
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-2" dir="ltr">
@@ -47,11 +47,17 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-3">
             <span className="hidden sm:inline">تابعونا:</span>
-            {[Facebook, Twitter, Instagram, Linkedin, Youtube].map((Icon, i) => (
-              <Link href="#" key={i} className="hover:text-blue-300 transition-colors">
-                <Icon className="w-4 h-4" />
-              </Link>
-            ))}
+            {[Facebook, Twitter, Instagram, Linkedin, Youtube].map(
+              (Icon, i) => (
+                <Link
+                  href="#"
+                  key={i}
+                  className="hover:text-blue-300 transition-colors"
+                >
+                  <Icon className="w-4 h-4" />
+                </Link>
+              )
+            )}
           </div>
         </div>
       </div>
@@ -85,13 +91,13 @@ const Navbar = () => {
                 <Link
                   key={href}
                   href={href}
-                  className="text-gray-700 hover:text-[#9e1915] font-medium relative group transition-colors"
+                  className="text-gray-700 text-xl hover:text-[#9e1915] font-burdaMedium relative group transition-colors"
                 >
                   {label}
                   <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#9e1915] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               ))}
-              <Button className="bg-gradient-to-r from-[#9e1915] to-[#d5241e] text-white px-6 py-2 rounded-full shadow-md hover:shadow-lg transition-transform hover:scale-105">
+              <Button className="text-xl bg-gradient-to-r from-[#9e1915] to-[#d5241e] text-white px-6 py-2 rounded-full shadow-md hover:shadow-lg transition-transform hover:scale-105">
                 احجز استشارة مجانية
               </Button>
             </div>
@@ -103,7 +109,11 @@ const Navbar = () => {
               className="lg:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </Button>
           </div>
 
@@ -122,15 +132,15 @@ const Navbar = () => {
                   <Link
                     key={href}
                     href={href}
-                    className="text-gray-700 hover:text-[#9e1915] font-medium py-2 transition-colors"
+                    className="text-gray-700 hover:text-[#9e1915] font-burdaMedium py-2 transition-colors"
                   >
                     {label}
                   </Link>
                 ))}
                 <a href="/contact">
-                <Button className="bg-gradient-to-r from-[#9e1915] to-[#d5241e] text-white rounded-full py-2 mt-2 shadow-md hover:shadow-lg transition-transform hover:scale-105">
-                  احجز استشارة مجانية
-                </Button>
+                  <Button className="bg-gradient-to-r from-[#9e1915] to-[#d5241e] text-white rounded-full py-2 mt-2 shadow-md hover:shadow-lg transition-transform hover:scale-105">
+                    احجز استشارة مجانية
+                  </Button>
                 </a>
               </div>
             </div>

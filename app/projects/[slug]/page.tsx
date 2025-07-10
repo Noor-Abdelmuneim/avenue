@@ -34,7 +34,8 @@ const getProjectData = (slug: string) => {
       title: "بلوم جاردنز",
       type: "سكني",
       location: "دبي لاند",
-      mainImage: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+      mainImage:
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "متاح الآن",
       statusColor: "bg-green-500",
       priceFrom: "850,000",
@@ -86,21 +87,24 @@ const getProjectData = (slug: string) => {
       floorPlans: [
         {
           name: "شقة بغرفة نوم واحدة",
-          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+          image:
+            "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "120",
           bedrooms: "1",
           bathrooms: "2",
         },
         {
           name: "شقة بغرفتي نوم",
-          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+          image:
+            "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "180",
           bedrooms: "2",
           bathrooms: "3",
         },
         {
           name: "شقة بثلاث غرف نوم",
-          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+          image:
+            "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "250",
           bedrooms: "3",
           bathrooms: "4",
@@ -108,7 +112,8 @@ const getProjectData = (slug: string) => {
       ],
       locationData: {
         address: "دبي لاند، دبي، الإمارات العربية المتحدة",
-        mapImage: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        mapImage:
+          "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
         nearbyPlaces: [
           { name: "مطار دبي الدولي", distance: "25 دقيقة" },
           { name: "داون تاون دبي", distance: "20 دقيقة" },
@@ -121,14 +126,16 @@ const getProjectData = (slug: string) => {
           id: 2,
           slug: "bloom-heights",
           title: "بلوم هايتس",
-          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+          image:
+            "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           location: "وسط دبي",
         },
         {
           id: 3,
           slug: "bloom-marina",
           title: "بلوم مارينا",
-          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+          image:
+            "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           location: "دبي مارينا",
         },
       ],
@@ -139,7 +146,8 @@ const getProjectData = (slug: string) => {
       title: "بلوم هايتس",
       type: "سكني",
       location: "وسط دبي",
-      mainImage: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+      mainImage:
+        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
       status: "قريباً",
       statusColor: "bg-orange-500",
       priceFrom: "1,200,000",
@@ -191,21 +199,24 @@ const getProjectData = (slug: string) => {
       floorPlans: [
         {
           name: "شقة بغرفتي نوم",
-          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+          image:
+            "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "150",
           bedrooms: "2",
           bathrooms: "2",
         },
         {
           name: "شقة بثلاث غرف نوم",
-          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+          image:
+            "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "220",
           bedrooms: "3",
           bathrooms: "3",
         },
         {
           name: "شقة بأربع غرف نوم",
-          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+          image:
+            "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           area: "350",
           bedrooms: "4",
           bathrooms: "5",
@@ -213,7 +224,8 @@ const getProjectData = (slug: string) => {
       ],
       locationData: {
         address: "وسط دبي، دبي، الإمارات العربية المتحدة",
-        mapImage: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        mapImage:
+          "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
         nearbyPlaces: [
           { name: "برج خليفة", distance: "5 دقائق" },
           { name: "دبي مول", distance: "7 دقائق" },
@@ -226,14 +238,16 @@ const getProjectData = (slug: string) => {
           id: 1,
           slug: "bloom-gardens",
           title: "بلوم جاردنز",
-          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+          image:
+            "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           location: "دبي لاند",
         },
         {
           id: 3,
           slug: "bloom-marina",
           title: "بلوم مارينا",
-          image: "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+          image:
+            "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
           location: "دبي مارينا",
         },
       ],
@@ -279,12 +293,15 @@ export default function ProjectDetailPage({
 
   if (!project || !project.locationData) {
     return (
-      <div className="font-snd min-h-screen bg-white flex items-center justify-center" dir="rtl">
+      <div
+        className="font-snd min-h-screen bg-white flex items-center justify-center"
+        dir="rtl"
+      >
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-[#1a365d] mb-4">
+          <h1 className="text-3xl font-burdaBold text-[#1a365d] mb-4">
             المشروع غير موجود
           </h1>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-6 font-burdaLight text-xl md:text-2xl">
             عذراً، لم نتمكن من العثور على المشروع المطلوب.
           </p>
           <Link href="/projects">
@@ -322,7 +339,9 @@ export default function ProjectDetailPage({
               مشاريعنا
             </Link>
             <ChevronRight className="w-4 h-4 text-gray-400 rotate-180" />
-            <span className="text-[#9e1915] font-medium">{project.title}</span>
+            <span className="text-[#9e1915] font-burdaMedium">
+              {project.title}
+            </span>
           </nav>
         </div>
       </div>
@@ -346,33 +365,39 @@ export default function ProjectDetailPage({
             >
               {project.status}
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-burdaBold mb-6 leading-tight">
               {project.title}
             </h1>
             <div className="flex items-center gap-2 mb-4">
               <MapPin className="w-5 h-5" />
               <span className="text-xl opacity-90">{project.location}</span>
             </div>
-            <p className="text-xl md:text-2xl leading-relaxed opacity-90 mb-8">
+            <p className="text-xl md:text-2xl leading-relaxed opacity-90 mb-8 font-burdaLight">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-6">
               {project.bedrooms && (
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
                   <div className="text-sm opacity-80">غرف النوم</div>
-                  <div className="text-2xl font-bold">{project.bedrooms}</div>
+                  <div className="text-2xl font-burdaBold">
+                    {project.bedrooms}
+                  </div>
                 </div>
               )}
               {project.area && (
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
                   <div className="text-sm opacity-80">المساحة</div>
-                  <div className="text-2xl font-bold">{project.area} متر²</div>
+                  <div className="text-2xl font-burdaBold">
+                    {project.area} متر²
+                  </div>
                 </div>
               )}
               {project.completion && (
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
                   <div className="text-sm opacity-80">تاريخ الإنجاز</div>
-                  <div className="text-2xl font-bold">{project.completion}</div>
+                  <div className="text-2xl font-burdaBold">
+                    {project.completion}
+                  </div>
                 </div>
               )}
             </div>
@@ -387,7 +412,7 @@ export default function ProjectDetailPage({
             <div className="grid lg:grid-cols-3 gap-16">
               <div className="lg:col-span-3 mx-auto">
                 <div className="mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6">
+                  <h2 className="text-3xl md:text-4xl font-burdaBold text-[#1a365d] mb-6">
                     نظرة عامة
                   </h2>
                   <div className="space-y-4">
@@ -396,7 +421,7 @@ export default function ProjectDetailPage({
                         (paragraph: string, index: number) => (
                           <p
                             key={index}
-                            className="text-lg text-gray-700 leading-relaxed"
+                            className="text-xl md:text-2xl text-gray-700 leading-relaxed font-burdaLight"
                           >
                             {paragraph}
                           </p>
@@ -406,7 +431,7 @@ export default function ProjectDetailPage({
                 </div>
 
                 <div className="mb-12">
-                  <h3 className="text-2xl font-bold text-[#1a365d] mb-6">
+                  <h3 className="text-2xl font-burdaBold text-[#1a365d] mb-6">
                     المميزات
                   </h3>
                   <div className="grid md:grid-cols-2 gap-4">
@@ -428,10 +453,10 @@ export default function ProjectDetailPage({
         <section className="bg-gray-50">
           <div className="font-snd container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6">
+              <h2 className="text-3xl md:text-4xl font-burdaBold text-[#1a365d] mb-6">
                 المرافق والخدمات
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-gray-600 max-w-3xl mx-auto font-burdaLight text-xl md:text-2xl">
                 مجموعة متنوعة من المرافق والخدمات عالية الجودة لضمان راحة
                 ورفاهية السكان
               </p>
@@ -444,7 +469,7 @@ export default function ProjectDetailPage({
                     <div className="w-24 h-24 bg-white shadow-lg rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#1a365d] transition-all duration-300 group-hover:scale-110">
                       <amenity.icon className="w-12 h-12 text-[#1a365d] group-hover:text-white transition-colors duration-300" />
                     </div>
-                    <h3 className="text-xl font-bold text-[#1a365d] mb-3">
+                    <h3 className="text-xl font-burdaBold text-[#1a365d] mb-3">
                       {amenity.name}
                     </h3>
                   </div>
@@ -458,10 +483,10 @@ export default function ProjectDetailPage({
           <div className="font-snd container mx-auto px-4">
             <div className="w-full">
               <div className="mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6 text-center">
+                <h2 className="text-3xl md:text-4xl font-burdaBold text-[#1a365d] mb-6 text-center">
                   معرض الصور
                 </h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center mb-8">
+                <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto text-center mb-8 font-burdaLight">
                   استكشف جمال وفخامة مشروع {project.title} من خلال هذه الصور
                 </p>
               </div>
@@ -538,10 +563,10 @@ export default function ProjectDetailPage({
         <section className="py-20 bg-gray-50">
           <div className="font-snd container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6">
+              <h2 className="text-3xl md:text-4xl font-burdaBold text-[#1a365d] mb-6">
                 الموقع
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-burdaLight">
                 يتمتع {project.title} بموقع استراتيجي يوفر سهولة الوصول إلى أهم
                 المعالم والمرافق في دبي
               </p>
@@ -560,10 +585,10 @@ export default function ProjectDetailPage({
                     <div className="absolute inset-0 bg-[#1a365d]/10 flex items-center justify-center">
                       <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg">
                         <MapPin className="w-8 h-8 text-[#e53e3e] mx-auto mb-2" />
-                        <p className="font-bold text-[#1a365d]">
+                        <p className="text-xl md:text-2xl font-burdaBold text-[#1a365d]">
                           {project.title}
                         </p>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-xl md:text-2xl text-gray-600 font-burdaLight">
                           {project.locationData?.address}
                         </p>
                       </div>

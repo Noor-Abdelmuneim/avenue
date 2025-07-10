@@ -8,14 +8,13 @@ const CTA = () => {
     <section className="py-20 bg-gradient-to-r from-gray-900 via-[#9e1915] to-slate-900 text-white relative overflow-hidden">
       <div className="container max-w-6xl mx-auto px-4 relative z-10 font-snd">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-burdaBold mb-6 leading-tight">
             هل أنت مستعد لتأخذ خطوتك الاستثمارية التالية؟
           </h2>
-          <p className="text-xl md:text-2xl mb-10 text-gray-100 leading-relaxed">
+          <p className="text-xl md:text-2xl mb-10 text-gray-100 leading-relaxed font-burdaLight">
             تواصل معنا اليوم واكتشف كيف يمكن لأفينيو أن تساعدك في تحقيق أهدافك
             العقارية والاستثمارية من خلال حلول مبتكرة وخبرة راسخة.
           </p>
-
 
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <a href="/contact">

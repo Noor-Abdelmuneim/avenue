@@ -21,13 +21,15 @@ const About = () => {
                   <Award className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900 text-base">رؤيتنا</h4>
-                  <p className="text-sm text-gray-600 leading-snug">
+                  <h4 className="font-burdaBold text-gray-900 text-base">
+                    رؤيتنا
+                  </h4>
+                  <p className="text-lg font-burdaLight text-gray-600 leading-snug">
                     المطور العقاري الأكثر ثقة وأمانًا
                   </p>
                 </div>
               </div>
-              <p className="text-sm text-gray-600">
+              <p className="text-lg text-gray-600 font-burdaLight">
                 نهدف إلى بناء مجتمعات سكنية متميزة وتطوير عمراني مبتكر يلبي
                 احتياجات بلدنا.
               </p>
@@ -35,21 +37,21 @@ const About = () => {
           </div>
 
           <div className="order-1 lg:order-2">
-            <span className="inline-block bg-gray-100 text-[#9e1915] px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <span className="inline-block bg-gray-100 text-[#9e1915] px-4 py-2 rounded-full text-lg font-burdaMedium mb-6">
               من نحن
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-snug mb-6">
+            <h2 className="text-3xl md:text-5xl font-burdaBold text-gray-900 leading-snug mb-6">
               أبراج الجادة (Avenue)
               <span className="block text-[#9e1915] mt-2">
                 خبراء في التطوير العقاري
               </span>
             </h2>
-            <p className="text-lg text-gray-600 mb-5 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-600 mb-5 leading-relaxed font-burdaLight">
               تأسست شركتنا في عام 2019، ومنذ ذلك الحين نسعى جاهدين لتقديم
               استشارات عقارية موثوقة ومبنية على فهم عميق للسوق العراقي وخبرة
               واسعة في المجال.
             </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed font-burdaLight">
               نحرص على تقديم حلول مبتكرة، واستراتيجيات فعالة تحقق أهداف عملائنا
               وتعزز من جودة مشاريعهم العقارية.
             </p>

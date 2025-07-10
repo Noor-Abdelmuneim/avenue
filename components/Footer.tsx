@@ -34,7 +34,7 @@ const Footer = () => {
                 />
               </Link>
             </div>
-            <p className="text-gray-300 mb-6 leading-relaxed text-sm">
+            <p className="text-gray-300 mb-6 leading-relaxed text-md md:text-xl font-burdaLight">
               أفينيو هي شركة عراقية تأسست عام 2019 متخصصة في تقديم حلول التطوير
               والاستثمار العقاري، تسعى لبناء مجتمعات حديثة ومشاريع ذات جودة
               عالية وشراكات مستدامة.
@@ -56,7 +56,7 @@ const Footer = () => {
 
           {/* روابط سريعة */}
           <div>
-            <h3 className="text-lg font-bold mb-6">روابط سريعة</h3>
+            <h3 className="text-lg font-burdaBold mb-6">روابط سريعة</h3>
             <ul className="space-y-3 text-sm">
               {[
                 ["الرئيسية", "/"],
@@ -81,7 +81,7 @@ const Footer = () => {
 
           {/* الخدمات */}
           <div>
-            <h3 className="text-lg font-bold mb-6">خدماتنا</h3>
+            <h3 className="text-lg font-burdaBold mb-6">خدماتنا</h3>
             <ul className="space-y-3 text-sm">
               {[
                 ["الاستثمار العقاري", <Building2 key="1" />],
@@ -105,7 +105,7 @@ const Footer = () => {
 
           {/* معلومات التواصل */}
           <div>
-            <h3 className="text-lg font-bold mb-6">معلومات التواصل</h3>
+            <h3 className="text-lg font-burdaBold mb-6">معلومات التواصل</h3>
             <div className="space-y-4 text-sm text-gray-300">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1 text-gray-400" />
@@ -144,8 +144,20 @@ const Footer = () => {
         </div>
 
         {/* الحقوق */}
-        <div className="border-t border-gray-800 pt-8 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center gap-4" dir="ltr">
-          <p className="">&copy; {new Date().getFullYear()} Powered By <a href="https://swt-iq.com/" target="_blank" className="hover:text-white">SmartWave Technologies.</a></p>
+        <div
+          className="border-t font-burdaLight border-gray-800 pt-8 text-md text-gray-400 flex flex-col md:flex-row justify-between items-center gap-4"
+          dir="ltr"
+        >
+          <p className="">
+            &copy; {new Date().getFullYear()} Powered By{" "}
+            <a
+              href="https://swt-iq.com/"
+              target="_blank"
+              className="hover:text-white"
+            >
+              SmartWave Technologies.
+            </a>
+          </p>
         </div>
       </div>
     </footer>

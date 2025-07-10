@@ -116,7 +116,7 @@ export default function ContactPage() {
               الرئيسية
             </Link>
             <ChevronRight className="w-4 h-4 text-gray-400 rotate-180" />
-            <span className="text-[#9e1915] font-medium">اتصل بنا</span>
+            <span className="text-[#9e1915] font-burdaMedium">اتصل بنا</span>
           </nav>
         </div>
       </div>
@@ -135,10 +135,10 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a365d]/80 to-transparent" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-burdaBold mb-6 leading-tight">
               اتصل بنا
             </h1>
-            <p className="text-xl md:text-2xl leading-relaxed opacity-90">
+            <p className="text-xl md:text-2xl font-burdaLight leading-relaxed opacity-90">
               نحن هنا لمساعدتك في العثور على منزل أحلامك أو الإجابة على
               استفساراتك
             </p>
@@ -154,10 +154,10 @@ export default function ContactPage() {
               <div className="text-gray-600 font-semibold mb-4 text-lg">
                 تواصل معنا
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#9e1915] mb-6">
+              <h2 className="text-4xl md:text-5xl font-burdaBold text-[#9e1915] mb-6">
                 كيف يمكنك الوصول إلينا
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl text-gray-600 font-burdaLight max-w-3xl mx-auto">
                 فريقنا المتخصص جاهز لمساعدتك في أي وقت عبر قنوات التواصل
                 المختلفة
               </p>
@@ -175,12 +175,12 @@ export default function ContactPage() {
                     >
                       <info.icon className="w-10 h-10 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-600 mb-4">
+                    <h3 className="text-2xl font-burdaBold text-gray-600 mb-4">
                       {info.title}
                     </h3>
                     <div className="space-y-2">
                       {info.details.map((detail, idx) => (
-                        <p key={idx} className="text-gray-600 leading-relaxed">
+                        <p key={idx} className="text-gray-600 font-burdaLight leading-relaxed text-xl md:text-2xl">
                           {detail}
                         </p>
                       ))}
@@ -199,10 +199,10 @@ export default function ContactPage() {
               {/* Contact Form */}
               <div className="mx-auto">
                 <div className="mb-8">
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4">
+                  <h2 className="text-3xl md:text-4xl font-burdaBold text-[#1a365d] mb-4">
                     أرسل لنا رسالة
                   </h2>
-                  <p className="text-lg text-gray-600">
+                  <p className="text-xl md:text-2xl text-gray-600 font-burdaLight">
                     املأ النموذج أدناه وسنتواصل معك في أقرب وقت ممكن
                   </p>
                 </div>
@@ -213,10 +213,10 @@ export default function ContactPage() {
                       <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <CheckCircle className="w-8 h-8 text-white" />
                       </div>
-                      <h3 className="text-2xl font-bold text-green-700 mb-2">
+                      <h3 className="text-2xl font-burdaBold text-green-700 mb-2">
                         تم إرسال رسالتك بنجاح!
                       </h3>
-                      <p className="text-green-600">سنتواصل معك خلال 24 ساعة</p>
+                      <p className="text-green-600 font-burdaLight text-xl md:text-2xl">سنتواصل معك خلال 24 ساعة</p>
                     </CardContent>
                   </Card>
                 ) : (
@@ -227,7 +227,7 @@ export default function ContactPage() {
                           <div>
                             <Label
                               htmlFor="name"
-                              className="text-[#1a365d] font-medium mb-2 block"
+                              className="text-[#1a365d] font-burdaMedium mb-2 block"
                             >
                               الاسم الكامل *
                             </Label>
@@ -244,7 +244,7 @@ export default function ContactPage() {
                           <div>
                             <Label
                               htmlFor="email"
-                              className="text-[#1a365d] font-medium mb-2 block"
+                              className="text-[#1a365d] font-burdaMedium mb-2 block"
                             >
                               البريد الإلكتروني *
                             </Label>
@@ -264,7 +264,7 @@ export default function ContactPage() {
                         <div>
                           <Label
                             htmlFor="subject"
-                            className="text-[#1a365d] font-medium mb-2 block"
+                            className="text-[#1a365d] font-burdaMedium mb-2 block"
                           >
                             الموضوع *
                           </Label>
@@ -282,7 +282,7 @@ export default function ContactPage() {
                         <div>
                           <Label
                             htmlFor="message"
-                            className="text-[#1a365d] font-medium mb-2 block"
+                            className="text-[#1a365d] font-burdaMedium mb-2 block"
                           >
                             الرسالة *
                           </Label>
@@ -300,7 +300,7 @@ export default function ContactPage() {
 
                         <Button
                           type="submit"
-                          className="w-full bg-gray-600 hover:bg-[#c53030] text-white py-3 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
+                          className="w-full bg-gray-600 hover:bg-[#c53030] text-white py-3 text-lg font-burdaMedium rounded-lg transition-all duration-300 transform hover:scale-105"
                         >
                           إرسال الرسالة
                           <Send className="w-5 h-5 mr-2" />
@@ -335,11 +335,11 @@ export default function ContactPage() {
                       >
                         <div className="text-center text-white">
                           <MapPin className="w-12 h-12 mx-auto mb-2" />
-                          <p className="text-lg font-semibold">
+                          <p className="text-xl md:text-2xl font-burdaLight">
                             موقعنا على الخريطة
                           </p>
-                          <p className="text-sm opacity-90">العراق بغداد</p>
-                          <p className="text-xs mt-2">(انقر لتفعيل الخريطة)</p>
+                          <p className="text-lg md:text-xl opacity-90 font-burdaLight">العراق بغداد</p>
+                          <p className="text-xl md:text-2xl mt-2 font-burdaLight">(انقر لتفعيل الخريطة)</p>
                         </div>
                       </div>
                     )}
@@ -368,10 +368,10 @@ export default function ContactPage() {
               <div className="text-gray-600 font-semibold mb-4 text-lg">
                 تابعنا
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#9e1915] mb-6">
+              <h2 className="text-3xl md:text-4xl font-burdaBold text-[#9e1915] mb-6">
                 ابق على تواصل معنا
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl text-gray-600 font-burdaLight max-w-3xl mx-auto">
                 تابع آخر أخبارنا وتحديثاتنا عبر منصات التواصل الاجتماعي
               </p>
             </div>
