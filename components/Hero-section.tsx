@@ -8,8 +8,7 @@ import { ChevronLeft, ChevronRight, Play, ArrowLeft, X } from "lucide-react";
 
 const heroSlides = [
   {
-    image:
-      "https://i.pinimg.com/736x/bc/c0/94/bcc094e2867aff8bc64e76b057af9629.jpg",
+    image: "/Bloom/1.jpg",
     title: "مرحباً بكم في أفينيو للاستثمار والتطوير العقاري",
     subtitle: "رائدون في تقديم الاستشارات العقارية منذ 2019",
     description:
@@ -17,11 +16,10 @@ const heroSlides = [
     buttonText: "اكتشف المزيد",
     videoText: "شاهد الفيديو",
     pageLink: "/about",
-    videoLink: "https://www.youtube.com/",
+    videoLink: "https://youtu.be/4jUqs7JOCSI?si=dePf0aNix6cMWjcU",
   },
   {
-    image:
-      "https://i.pinimg.com/736x/28/01/83/280183b564e3c2c996dc0714153ee6ef.jpg",
+    image: "/Bloom/800....2.png",
     title: "رؤيتنا",
     subtitle: "نحو مجتمعات سكنية متميزة وتطوير مبتكر",
     description:
@@ -29,11 +27,10 @@ const heroSlides = [
     buttonText: "تعرف على رؤيتنا",
     videoText: "رؤية وأهداف",
     pageLink: "/about",
-    videoLink: "https://www.youtube.com/",
+    videoLink: "https://youtu.be/qSuv7PIq_2I?si=C81S0FRbTT8ScDZ1",
   },
   {
-    image:
-      "https://i.pinimg.com/736x/a5/56/e8/a556e8fc7c3146e625ebdb58d0fec548.jpg",
+    image: "/Al Naseem/WhatsApp Image 2025-04-07 at 16.26.52.jpeg",
     title: "التزامنا نحو التنمية المستدامة",
     subtitle: "نحترم البيئة ونشجع الابتكار",
     description:
@@ -41,7 +38,7 @@ const heroSlides = [
     buttonText: "اعرف المزيد",
     videoText: "مشاريع مستدامة",
     pageLink: "/projects",
-    videoLink: "https://www.youtube.com/",
+    videoLink: "https://youtu.be/lhPS0pN3daU?si=KsVqkBUrMDUMBJk5",
   },
 ];
 
@@ -64,7 +61,10 @@ const HeroSection = () => {
       (prev) => (prev - 1 + heroSlides.length) % heroSlides.length
     );
   const openVideo = (link) => {
-    setCurrentVideoLink(link);
+    const embedLink = link
+      .replace("https://youtu.be/", "https://www.youtube.com/embed/")
+      .split("?")[0];
+    setCurrentVideoLink(embedLink);
     setIsVideoOpen(true);
   };
 

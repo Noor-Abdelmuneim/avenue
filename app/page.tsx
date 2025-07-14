@@ -3,7 +3,7 @@ import HeroSection from "@/components/Hero-section";
 import About from "@/components/About-us";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
-import LatestNews from "@/components/Latest-news";
+// import LatestNews from "@/components/Latest-news";
 import CTA from "@/components/CTA-section";
 import Footer from "@/components/Footer";
 
@@ -15,7 +15,7 @@ export default function HomePage() {
       <About />
       <Services />
       <Projects />
-      <LatestNews />
+      {/* <LatestNews /> */}
       <CTA />
       <Footer />
     </div>

@@ -51,7 +51,7 @@ export default function ProjectsPage() {
       type: "سكني",
       location: "وسط دبي",
       image:
-        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "/Al Naseem/WhatsApp Image 2025-04-07 at 16.22.52.jpeg",
       status: "قريباً",
       statusColor: "bg-orange-500",
       priceFrom: "1,200,000",
@@ -72,7 +72,7 @@ export default function ProjectsPage() {
       type: "سكني",
       location: "دبي مارينا",
       image:
-        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "/Al Naseem/WhatsApp Image 2025-04-07 at 16.26.52.jpeg",
       status: "تحت الإنشاء",
       statusColor: "bg-blue-500",
       priceFrom: "1,500,000",
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
       type: "سكني",
       location: "الخليج التجاري",
       image:
-        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "/Bloom/800....2.png",
       status: "متاح الآن",
       statusColor: "bg-green-500",
       priceFrom: "950,000",
@@ -102,7 +102,7 @@ export default function ProjectsPage() {
       type: "تجاري",
       location: "شارع الشيخ زايد",
       image:
-        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "/Al Naseem/WhatsApp Image 2025-04-07 at 16.32.47.jpeg",
       status: "متاح الآن",
       statusColor: "bg-green-500",
       priceFrom: "1,800,000",
@@ -117,43 +117,13 @@ export default function ProjectsPage() {
       type: "سكني",
       location: "جميرا فيليج سيركل",
       image:
-        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
+        "/Bloom/1000 interior (1).png",
       status: "قريباً",
       statusColor: "bg-orange-500",
       priceFrom: "1,100,000",
       bedrooms: "2-3",
       description:
         "شقق سكنية فاخرة مع تصاميم عصرية ومساحات واسعة ومرافق متكاملة",
-    },
-    {
-      id: 7,
-      slug: "bloom-hotel",
-      title: "بلوم هوتيل",
-      type: "ضيافة",
-      location: "داون تاون دبي",
-      image:
-        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
-      status: "تحت الإنشاء",
-      statusColor: "bg-blue-500",
-      priceFrom: null,
-      bedrooms: null,
-      description:
-        "فندق فاخر من فئة 5 نجوم مع 200 غرفة وجناح ومرافق ترفيهية وتجارية",
-    },
-    {
-      id: 8,
-      slug: "bloom-square",
-      title: "بلوم سكوير",
-      type: "متعدد الاستخدامات",
-      location: "دبي هيلز استيت",
-      image:
-        "https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg",
-      status: "قريباً",
-      statusColor: "bg-orange-500",
-      priceFrom: "1,300,000",
-      bedrooms: "1-4",
-      description:
-        "مجمع متعدد الاستخدامات يضم وحدات سكنية ومكاتب تجارية ومحلات تجزئة",
     },
   ];
 
@@ -184,7 +154,7 @@ export default function ProjectsPage() {
       <section className="font-snd relative h-[60vh] bg-gradient-to-r from-[#1a365d] to-[#2d5a87] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://i.pinimg.com/736x/cc/f0/e1/ccf0e1b50a84c0a0e9895c2e950df05f.jpg"
+            src="/Bloom/1.jpg"
             alt="مشاريع بلوم هولدنغ"
             fill
             className="object-cover opacity-30"

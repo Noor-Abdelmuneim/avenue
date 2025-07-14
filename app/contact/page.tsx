@@ -125,7 +125,7 @@ export default function ContactPage() {
       <section className="font-snd relative h-[50vh] bg-gradient-to-r from-[#1a365d] to-[#2d5a87] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://i.pinimg.com/736x/6a/5f/94/6a5f9423f4d61bbf677e7d057c50713f.jpg"
+            src="/Bloom/1.jpg"
             alt="اتصل بنا - بلوم هولدنغ"
             fill
             className="object-cover opacity-30"
@@ -180,7 +180,10 @@ export default function ContactPage() {
                     </h3>
                     <div className="space-y-2">
                       {info.details.map((detail, idx) => (
-                        <p key={idx} className="text-gray-600 font-burdaLight leading-relaxed text-xl md:text-2xl">
+                        <p
+                          key={idx}
+                          className="text-gray-600 font-burdaLight leading-relaxed text-xl md:text-2xl"
+                        >
                           {detail}
                         </p>
                       ))}
@@ -216,7 +219,9 @@ export default function ContactPage() {
                       <h3 className="text-2xl font-burdaBold text-green-700 mb-2">
                         تم إرسال رسالتك بنجاح!
                       </h3>
-                      <p className="text-green-600 font-burdaLight text-xl md:text-2xl">سنتواصل معك خلال 24 ساعة</p>
+                      <p className="text-green-600 font-burdaLight text-xl md:text-2xl">
+                        سنتواصل معك خلال 24 ساعة
+                      </p>
                     </CardContent>
                   </Card>
                 ) : (
@@ -338,8 +343,12 @@ export default function ContactPage() {
                           <p className="text-xl md:text-2xl font-burdaLight">
                             موقعنا على الخريطة
                           </p>
-                          <p className="text-lg md:text-xl opacity-90 font-burdaLight">العراق بغداد</p>
-                          <p className="text-xl md:text-2xl mt-2 font-burdaLight">(انقر لتفعيل الخريطة)</p>
+                          <p className="text-lg md:text-xl opacity-90 font-burdaLight">
+                            العراق بغداد
+                          </p>
+                          <p className="text-xl md:text-2xl mt-2 font-burdaLight">
+                            (انقر لتفعيل الخريطة)
+                          </p>
                         </div>
                       </div>
                     )}
@@ -362,6 +371,7 @@ export default function ContactPage() {
         </section>
 
         {/* Social Media and Follow Us */}
+        {/* Social Media and Follow Us */}
         <section className="py-20 bg-gray-50">
           <div className="font-snd container mx-auto px-4">
             <div className="text-center mb-12">
@@ -377,21 +387,41 @@ export default function ContactPage() {
             </div>
 
             <div className="flex justify-center gap-6">
-              <div className="w-16 h-16 bg-[#1877F2] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
+              <Link
+                href="https://www.facebook.com/avenuerealestateiq/about_contact_and_basic_info"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-16 h-16 bg-[#1877F2] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
+              >
                 <Facebook className="w-8 h-8 text-white" />
-              </div>
-              <div className="w-16 h-16 bg-[#1DA1F2] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
-                <Twitter className="w-8 h-8 text-white" />
-              </div>
-              <div className="w-16 h-16 bg-gradient-to-r from-[#E4405F] to-[#F56040] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
+              </Link>
+
+              <Link
+                href="https://www.instagram.com/avenuerealestateiq/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-16 h-16 bg-gradient-to-r from-[#E4405F] to-[#F56040] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
+              >
                 <Instagram className="w-8 h-8 text-white" />
-              </div>
-              <div className="w-16 h-16 bg-[#0A66C2] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
+              </Link>
+
+              <Link
+                href="https://www.linkedin.com/company/avenuerealestateiq/?originalSubdomain=iq"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-16 h-16 bg-[#0A66C2] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
+              >
                 <Linkedin className="w-8 h-8 text-white" />
-              </div>
-              <div className="w-16 h-16 bg-[#FF0000] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
+              </Link>
+
+              <Link
+                href="https://www.youtube.com/channel/UCMk9f86fVXgqDr0AnTHdX1g"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-16 h-16 bg-[#FF0000] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
+              >
                 <Youtube className="w-8 h-8 text-white" />
-              </div>
+              </Link>
             </div>
           </div>
         </section>

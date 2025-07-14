@@ -53,7 +53,7 @@ export default function WhatWeDoPage() {
       <section className="font-snd relative h-[60vh] bg-gradient-to-r from-[#9e1915] to-[#2d5a87] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://i.pinimg.com/736x/6a/5f/94/6a5f9423f4d61bbf677e7d057c50713f.jpg"
+            src="/Bloom/1.jpg"
             alt="What We Do"
             fill
             className="object-cover opacity-30"
@@ -282,7 +282,7 @@ export default function WhatWeDoPage() {
             <h2 className="text-4xl md:text-5xl font-burdaBold text-[#9e1915] mb-6">
               كيف نعمل
             </h2>
-            <p className="text-xl text-gray-600 text-xl md:text-2xl max-w-3xl mx-auto font-burdaLight">
+            <p className="text-gray-600 text-xl md:text-2xl max-w-3xl mx-auto font-burdaLight">
               نتبع منهجية علمية ومدروسة في جميع مشاريعنا لضمان تحقيق أفضل
               النتائج
             </p>
@@ -380,7 +380,7 @@ export default function WhatWeDoPage() {
             <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0">
               <div className="relative h-80 overflow-hidden">
                 <Image
-                  src="https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg"
+                  src="/Bloom/1000 interior (1).png"
                   alt="Bloom Gardens"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -421,16 +421,16 @@ export default function WhatWeDoPage() {
                   </div>
                   <span className="text-sm text-gray-600">(4.9/5)</span>
                 </div>
-                <Button className="w-full bg-[#9e1915] hover:bg-[#2d5a87] text-white">
+                {/* <Button className="w-full bg-[#9e1915] hover:bg-[#2d5a87] text-white">
                   عرض التفاصيل
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
 
             <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0">
               <div className="relative h-80 overflow-hidden">
                 <Image
-                  src="https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg"
+                  src="/Bloom/800....2.png"
                   alt="Bloom Heights"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -469,16 +469,16 @@ export default function WhatWeDoPage() {
                   </div>
                   <span className="text-sm text-gray-600">65%</span>
                 </div>
-                <Button className="w-full bg-[#9e1915] hover:bg-[#2d5a87] text-white">
+                {/* <Button className="w-full bg-[#9e1915] hover:bg-[#2d5a87] text-white">
                   عرض التفاصيل
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
 
             <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0">
               <div className="relative h-80 overflow-hidden">
                 <Image
-                  src="https://i.pinimg.com/736x/a4/7d/af/a47dafdcc8dd1c222985aa9c25152f11.jpg"
+                  src="/Bloom/1.jpg"
                   alt="Bloom Marina"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -489,7 +489,9 @@ export default function WhatWeDoPage() {
                 </Badge>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h3 className="text-2xl font-burdaBold mb-2">بلوم مارينا</h3>
-                  <p className="opacity-90 font-burdaLight text-xl md:text-2xl">واجهة بحرية - دبي مارينا</p>
+                  <p className="opacity-90 font-burdaLight text-xl md:text-2xl">
+                    واجهة بحرية - دبي مارينا
+                  </p>
                 </div>
               </div>
               <CardContent className="p-6">
@@ -512,9 +514,9 @@ export default function WhatWeDoPage() {
                     حائز على جائزة أفضل تصميم
                   </span>
                 </div>
-                <Button className="w-full bg-[#9e1915] hover:bg-[#2d5a87] text-white">
+                {/* <Button className="w-full bg-[#9e1915] hover:bg-[#2d5a87] text-white">
                   عرض التفاصيل
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
           </div>

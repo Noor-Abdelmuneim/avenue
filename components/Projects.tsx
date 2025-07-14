@@ -33,7 +33,7 @@ const Projects = () => {
       area: "75,000 م²",
       units: "150 مكتب",
       image:
-        "https://i.pinimg.com/736x/3f/7b/0a/3f7b0a3b789701bf145f22d2095a3820.jpg",
+        "/Bloom/1.jpg",
       description:
         "برج إداري حديث مصمم وفق أحدث المعايير الذكية لتلبية احتياجات الأعمال المتطورة.",
       features: [
@@ -51,7 +51,7 @@ const Projects = () => {
       area: "30,000 م²",
       units: "80 مكتب",
       image:
-        "https://i.pinimg.com/736x/3f/7b/0a/3f7b0a3b789701bf145f22d2095a3820.jpg",
+        "/Bloom/800....2.png",
       description:
         "مجمع إداري يوفر بيئة عمل مثالية ومجهزة بأحدث وسائل التكنولوجيا والتسهيلات.",
       features: [

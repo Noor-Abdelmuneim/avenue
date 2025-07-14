@@ -85,7 +85,7 @@ const Navbar = () => {
                 { href: "/about", label: "من نحن" },
                 { href: "/what-we-do", label: "خدماتنا" },
                 { href: "/projects", label: "مشاريعنا" },
-                { href: "/news", label: "الأخبار" },
+                // { href: "/news", label: "الأخبار" },
                 { href: "/contact", label: "اتصل بنا" },
               ].map(({ href, label }) => (
                 <Link
@@ -97,9 +97,11 @@ const Navbar = () => {
                   <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#9e1915] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               ))}
-              <Button className="text-xl bg-gradient-to-r from-[#9e1915] to-[#d5241e] text-white px-6 py-2 rounded-full shadow-md hover:shadow-lg transition-transform hover:scale-105">
-                احجز استشارة مجانية
-              </Button>
+              <Link href="/contact">
+                <Button className="text-xl bg-gradient-to-r from-[#9e1915] to-[#d5241e] text-white px-6 py-2 rounded-full shadow-md hover:shadow-lg transition-transform hover:scale-105">
+                  احجز استشارة مجانية
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -126,7 +128,7 @@ const Navbar = () => {
                   { href: "/about", label: "من نحن" },
                   { href: "/what-we-do", label: "خدماتنا" },
                   { href: "/projects", label: "مشاريعنا" },
-                  { href: "/news", label: "الأخبار" },
+                  // { href: "/news", label: "الأخبار" },
                   { href: "/contact", label: "اتصل بنا" },
                 ].map(({ href, label }) => (
                   <Link

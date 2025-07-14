@@ -42,7 +42,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative h-[60vh] bg-gradient-to-r from-[#9e1915] to-[#2d5a87] overflow-hidden">
         <Image
-          src="https://i.pinimg.com/736x/6a/5f/94/6a5f9423f4d61bbf677e7d057c50713f.jpg"
+          src="/Bloom/1.jpg"
           alt="عن أفينيو"
           fill
           className="object-cover opacity-20 absolute inset-0"
@@ -309,7 +309,7 @@ export default function AboutPage() {
                 <MapPin className="w-5 h-5 mr-2" />
               </Button>
             </Link>
-            <Link href="/careers">
+            {/* <Link href="/careers">
               <Button
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white hover:text-[#9e1915] px-8 py-4 text-lg rounded-full"
@@ -317,7 +317,7 @@ export default function AboutPage() {
                 انضم لفريقنا
                 <Users className="w-5 h-5 mr-2" />
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>

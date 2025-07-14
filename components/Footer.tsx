@@ -6,7 +6,6 @@ import {
   Mail,
   MapPin,
   Facebook,
-  Twitter,
   Instagram,
   Linkedin,
   Youtube,
@@ -17,6 +16,13 @@ import {
   Globe,
   Briefcase,
 } from "lucide-react";
+
+const socialLinks = [
+  { icon: Facebook, url: "https://www.facebook.com/avenuerealestateiq/about_contact_and_basic_info" },
+  { icon: Instagram, url: "https://www.instagram.com/avenuerealestateiq/" },
+  { icon: Linkedin, url: "https://www.linkedin.com/company/avenuerealestateiq/?originalSubdomain=iq" },
+  { icon: Youtube, url: "https://www.youtube.com/channel/UCMk9f86fVXgqDr0AnTHdX1g" },
+];
 
 const Footer = () => {
   return (
@@ -39,19 +45,19 @@ const Footer = () => {
               والاستثمار العقاري، تسعى لبناء مجتمعات حديثة ومشاريع ذات جودة
               عالية وشراكات مستدامة.
             </p>
-            <div className="flex gap-3">
-              {[Facebook, Twitter, Instagram, Linkedin, Youtube].map(
-                (Icon, i) => (
-                  <Link
-                    key={i}
-                    href="#"
-                    className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-600 transition"
-                  >
-                    <Icon className="w-5 h-5" />
-                  </Link>
-                )
-              )}
-            </div>
+<div className="flex gap-3">
+      {socialLinks.map(({ icon: Icon, url }, i) => (
+        <Link
+          key={i}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-600 transition"
+        >
+          <Icon className="w-5 h-5" />
+        </Link>
+      ))}
+    </div>
           </div>
 
           {/* روابط سريعة */}

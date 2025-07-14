@@ -9,10 +9,10 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1 relative">
             <Image
-              src="https://i.pinimg.com/736x/3f/7b/0a/3f7b0a3b789701bf145f22d2095a3820.jpg"
+              src="/aboutsection.jpg"
               alt="Avenue Real Estate"
-              width={800}
-              height={600}
+              width={500}
+              height={200}
               className="rounded-2xl shadow-xl w-full h-auto"
             />
             <div className="absolute -bottom-8 -right-6 bg-white p-6 rounded-xl shadow-lg max-w-xs">
